@@ -1,0 +1,30 @@
+.menu {
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    &__list-link {
+        padding: 13px 0;
+        @extend %rubik-500;
+        font-size: 15px;
+        color: #436372;
+    
+            &:after {
+                display: block;
+                content: '';
+                height: 4px;
+                width: 0%;
+                @extend %slideColor;
+                transition: width .3s ease-in-out;
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+    }
+}

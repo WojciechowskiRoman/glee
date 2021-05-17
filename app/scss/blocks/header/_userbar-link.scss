@@ -1,0 +1,11 @@
+.userbar-link {
+
+    &__img {
+        transition: all 0.5s;
+    }
+
+    &:hover &__img {
+        fill: red;
+        transform: scale(1.5);
+    }
+}

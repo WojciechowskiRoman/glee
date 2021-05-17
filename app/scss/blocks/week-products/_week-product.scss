@@ -1,0 +1,25 @@
+.week-products {
+
+    &__title {
+        text-align: center;
+        margin-bottom: 14px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        margin: 0 10px 30px 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        width: 270px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        background-color: #ffffff;
+        text-align: center;
+
+    }
+}

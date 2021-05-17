@@ -1,0 +1,36 @@
+.form {
+
+    &__email {
+        padding: 14px 0 14px 16px;
+        @extend %slideColor;
+        background-color: rgba(252,215,182,0.2);
+        border: none;
+    }
+
+    &__button {
+        padding: 14px 19px 14px 16px;
+        position: relative;
+        color: $whiteColor;
+        background-color: #a3bbc8;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background: #383736;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+
+        &:hover::before {
+            top: 0;
+        }
+    }
+}

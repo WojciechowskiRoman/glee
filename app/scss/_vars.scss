@@ -1,0 +1,57 @@
+%rubik-400 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+%DMSans-400 {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 400;
+}
+
+%DMSans-500 {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 500;
+}
+
+%DMSans-700 {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+}
+
+%bgPosition {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+%bgWhite {
+    background-color: #fff;
+}
+
+%slideColor {
+    background-color: #fcd7b6;
+}
+
+%hoverColor {
+    background-color: #a3bbc8;
+}
+
+%productNameColor {
+    $color: #243f4d;
+}
+
+$whiteColor: #fff;
+
+$footerColor: #7b7b7b;
+
+$footerTitleColor: #1f2044;
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

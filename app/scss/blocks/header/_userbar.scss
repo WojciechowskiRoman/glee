@@ -1,0 +1,79 @@
+.userbar {
+
+    display: flex;
+
+    &__item {
+        width: 51px;
+        height: 52px;
+        border: none;
+            &--order {
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+                width: 178px;
+                border-radius: 25px;
+                @extend %slideColor;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 32px;
+                    top: 10px;
+                    width: 1px;
+                    opacity: 0.4;
+                    @extend %bgWhite;
+                }
+            }
+    }
+
+    &__item-link {
+        position: relative;
+        padding: 15px 31px;
+        @extend %bgPosition;
+        background-size: 18px 16px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__search, &__menu {
+        @extend %bgPosition;
+        background-size: 16px 16px;
+        width: 52px;
+        height: 51px;
+        border: none;
+        border-radius: 50%;
+        outline: transparent;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            background-size: 20px 20px;
+            background-color: rgb(240, 206, 206);
+        }
+    }
+
+    &__search {
+        background-image: url(../../../images/icons/search.svg);
+        @extend %bgPosition;
+    }
+
+    &__menu {
+        background-color: #a3bbc8;
+        background-image: url(../../../images/icons/dots.svg);
+    }
+    
+    &__count {
+        padding: 4px;
+        position: absolute;
+        top: 8px;
+        right: 23px;
+        font-size: 10px;
+        line-height: 1;
+        border-radius: 50%;
+        @extend %DMSans-400;
+        background-color: #fff
+    }
+}

@@ -1,0 +1,28 @@
+.menu-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.menu-item__link {
+    padding: 6px 0;
+    position: relative;
+    color: $footerColor;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        height: 4px;
+        width: 0%;
+        @extend %slideColor;
+        transition: width .3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &--bottom {
+        padding: 14px 3px;
+    }
+}
