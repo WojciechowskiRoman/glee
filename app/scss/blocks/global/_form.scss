@@ -1,14 +1,27 @@
 .form {
 
     &__email {
-        padding: 14px 0 14px 16px;
+        padding: 16px 12px;
+        margin-right: -3px;
+        width: 170px;
+        height: 38px;
         @extend %slideColor;
         background-color: rgba(252,215,182,0.2);
         border: none;
+        transition: box-shadow 0.5s;
+        outline: transparent;
+        &::placeholder {
+            color: $placeholderColor;
+        }
+
+        &:hover, &:focus {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 
     &__button {
-        padding: 14px 19px 14px 16px;
+        width: 100px;
+        height: 38px;
         position: relative;
         color: $whiteColor;
         background-color: #a3bbc8;

@@ -18,13 +18,17 @@
     }
 
     &__column-menu {
-        padding-right: 8%;
+       margin-right: 8%;
     }
 
     &__menu {
         display: flex;
         justify-content: space-between;
-        width: 389px;
+        width: 424px;
+    }
+
+    &__menu-column {
+        width: 120px;
     }
 
     &__menu-title {
@@ -40,11 +44,11 @@
     }
 
     &__form {
-        margin-top: 26px;
+        margin-top: 32px;
     }
 
     &__bottom {
-        padding: 37px 0 39px;
+        padding: 33px 0 39px;
         display: flex;
         justify-content: space-between;
     }
@@ -56,13 +60,4 @@
     &__menu-list--bottom {
         display: flex;
     }
-}
-
-.menu-item__bottom:not(:last-child) {
-    border-right: 1px solid;
-    padding: 0 11px;
-}
-
-.menu-item__bottom:last-child {
-    padding-left: 11px;
 }
