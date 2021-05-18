@@ -56,13 +56,13 @@
     }
 
     &__search {
-        background-image: url(../../../images/icons/search.svg);
+        background-image: url(../images/icons/search.svg);
         @extend %bgPosition;
     }
 
     &__menu {
         background-color: #a3bbc8;
-        background-image: url(../../../images/icons/dots.svg);
+        background-image: url(../images/icons/dots.svg);
     }
     
     &__count {
