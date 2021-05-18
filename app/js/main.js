@@ -1,5 +1,3 @@
-var $jq = jQuery.noConflict();
-
 $(function() {
 
     $("a[href^='#']").click(function(){
