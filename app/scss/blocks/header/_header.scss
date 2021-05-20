@@ -1,8 +1,7 @@
 .header {
-    &__inner {
-        padding: 43px 0 49px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    position: fixed;
+    z-index: 45;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }

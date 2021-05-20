@@ -2,10 +2,11 @@
 
     @extend %rubik-400;
     font-size: 14px;
+    color: $footer;
 
     &__top {
-        padding: 74px 0;
-        border-bottom: 1px solid rgba(#a3bbc8, 0.4);
+        padding: 74px 0 57px;
+        border-bottom: 1px solid rgba($hover, 0.4);
     }
 
     &__columns {
@@ -13,51 +14,143 @@
         justify-content: space-between;
     }
 
-    &__column:not(.footer-contacts) {
+    &__contacts {
+        max-width: 213px;
+        width: 100%;
+    }
+
+    &__column {
+        &--services, &--account {
+            max-width: 215px;
+            width: 100%;
+        }
+    }
+
+    &__column:not(.footer__contacts) {
         padding-top: 21px;
     }
 
-    &__column-menu {
-       margin-right: 8%;
+    &__column:not(:last-child) {
+        padding-right: 10px;
     }
 
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        width: 424px;
+    &__address {
+        margin-bottom: 16px;
+        font-style: normal;
+        line-height: 1.7;
     }
 
-    &__menu-column {
-        width: 120px;
+    &__phone, &__email {
+        display: block;
+        padding-bottom: 15px;
+        color: $footer;
+        transition: color 0.5s;
+        &:hover, &:active, &:focus {
+            color: $hover;
+        }
     }
 
-    &__menu-title {
-        margin-bottom: 22px;
-        text-transform: uppercase;
+    &__title {
+        margin-bottom: 21px;
         font-size: 16px;
-        line-height: 1.31;
-        color: $footerTitleColor;
+        text-transform: uppercase;
     }
 
-    &__menu-link {
-        color: $footerColor;
+    &__item {
+        margin-bottom: 14px;
+
+        &--bottom {
+            
+            &:not(:last-child) {
+                padding: 0 14px;
+                border-right: 1px solid #7b7b7b;
+            }
+        
+            &:last-child {
+                padding-left: 11px;
+            }
+        }
+    }
+
+    &__link {
+
+        &--bottom {
+            padding: 14px 3px;
+        }
+    }
+
+    &--subscribe {
+        max-width: 271px;
+        width: 100%;
+    }
+
+    &__text {
+        line-height: 1.71;
     }
 
     &__form {
         margin-top: 32px;
     }
 
+    &__button {
+        padding: 11px 0;
+        width: 100px;
+        color: #fff;
+        background-color: $hover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background: #000;
+            z-index: -1;
+            transition: all 0.5s;
+        }
+
+        &:hover:before {
+            top: 0;
+        }
+        &:hover{
+            color: $hover;
+        }
+
+        &:active, &:focus {
+            background-color: $hover;
+        }
+    }
+
     &__bottom {
-        padding: 33px 0 39px;
+        padding: 37px 0;
         display: flex;
         justify-content: space-between;
     }
 
-    &__bottom-rights {
-        color: $footerColor;
+    &__menu {
+        display: flex;
     }
 
-    &__menu-list--bottom {
-        display: flex;
+    &__label {
+        padding: 12px 0;
+        transition: box-shadow 0.5s;
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 15px $hover;
+        }
+    }
+}
+
+.form__email {
+    padding: 16px 12px;
+    margin-right: -3px;
+    width: 170px;
+    height: 38px;
+    background-color: $accent;
+    background-color: rgba(252,215,182,0.2);
+    border: none;
+    outline: transparent;
+    &::placeholder {
+        color: #234969;
     }
 }

@@ -1,0 +1,123 @@
+.product {
+
+    &__types {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2.5%;
+    }
+
+    &__type {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__type-button {
+        padding: 15px 0;
+        font-weight: 700;
+        background-color: transparent;
+        color: #8b8b8b;
+
+        &:hover, &:active, :focus {
+            color: #1a1a1a;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        margin: 0 10px 30px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: 270px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        background-color: #fff;
+        text-align: center;
+
+        &:hover .product__img {
+            transform: scale(1.1);
+        }
+
+        &:hover .product__menu {
+            opacity: 1;
+        }
+    }
+
+    &__img {
+        display: block;
+        padding-top: 50px;
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    &__info {
+        padding: 64px 0 38px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.5;
+        color: $productName;
+    }
+
+    &__cost {
+        font-weight: 700;
+        color: $hover;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 26px;
+        right: 0;
+        bottom: 37%;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    &__menu-item {
+        transition: all 0.5s;
+        svg {
+            margin: auto;
+        }
+    }
+
+    &__link, &__button {
+        margin-right: 19px;
+        display: flex;
+        width: 45px;
+        height: 45px;
+        background-repeat: no-repeat;
+        background-position: 11px;
+        background-color: #fff;
+        border-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        cursor: pointer;
+        transition: background-color 0.5s;
+
+        &:hover, &:focus, &:active {
+            background-color: $hover;
+        }
+
+        &:hover, &:focus {
+            svg {
+                fill: #fff;
+            }
+        }
+    } 
+}
+
+.mixitup-control-active {
+    color: #1a1a1a;
+}

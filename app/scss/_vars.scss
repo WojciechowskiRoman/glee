@@ -9,51 +9,21 @@
 }
 
 %DMSans-400 {
-    font-family: 'DMSans', sans-serif;
     font-weight: 400;
 }
 
 %DMSans-500 {
-    font-family: 'DMSans', sans-serif;
     font-weight: 500;
 }
 
 %DMSans-700 {
-    font-family: 'DMSans', sans-serif;
     font-weight: 700;
 }
 
-%bgPosition {
-    background-position: center;
-    background-repeat: no-repeat;
-}
+$accent: #fcd7b6;
 
-%bgWhite {
-    background-color: #fff;
-}
+$hover: #a3bbc8;
 
-%slideColor {
-    background-color: #fcd7b6;
-}
+$productName: #243f4d;
 
-%hoverColor {
-    background-color: #a3bbc8;
-}
-
-%productNameColor {
-    $color: #243f4d;
-}
-
-$whiteColor: #fff;
-
-$footerColor: #7b7b7b;
-
-$footerTitleColor: #1f2044;
-
-$placeholderColor: #234969;
-
-%flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+$footer: #7b7b7b;

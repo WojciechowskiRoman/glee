@@ -1,29 +1,16 @@
+@import 'fonts';
 @import 'reset';
 @import 'vars';
-@import 'fonts';
 @import 'libs';
 @import 'global';
 
-@import 'blocks/global/title';
-@import 'blocks/global/_sr-only';
+
 @import 'blocks/header/header';
 @import 'blocks/global/logo';
 @import 'blocks/header/menu';
 @import 'blocks/header/userbar';
-@import 'blocks/header/userbar-link';
 @import 'blocks/banner/banner';
-@import 'blocks/banner/slick';
 @import 'blocks/features/features';
 @import 'blocks/week-products/week-product';
-@import 'blocks/global/products-card';
-@import 'blocks/global/product-types';
-@import 'blocks/global/card-link';
+@import 'blocks/global/product';
 @import 'blocks/footer/footer';
-@import 'blocks/footer/footer-contacts.scss';
-@import 'blocks/footer/footer-subscribe';
-@import 'blocks/footer/menu-item';
-@import 'blocks/global/form';
-
-
-
-@import 'media';

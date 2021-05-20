@@ -5,22 +5,82 @@ html,body {
 body {
     font-size: 16px;
     line-height: 1.2;
+    font-family: 'DMSans', 'sans-serif';
     display: flex;
     flex-direction: column;
 }
 
-.container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.wrapper {
+.container, .container--small {
     max-width: 1800px;
     padding: 0 15px;
     margin: 0 auto;
+
+    &--small {
+        max-width: 1200px;
+    }
 }
 
 .main {
+    margin-top: 7.5%;
     flex-grow: 1;
+}
+
+a {
+    font-family: 'Rubik';
+    
+    &:active, &:focus {
+        color: $accent;
+    }
+}
+
+.title {
+    font-family: 'DMSans';
+    font-size: 36px;
+    font-weight: 700;
+
+    &--main {
+        line-height: 0;
+        color: transparent;
+        width: 0;
+    }
+}
+
+.link {
+    position: relative;
+    display: block;
+    @extend %rubik-500;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 0;
+    transition: all 0.5s;
+
+    &::after {
+        content: url('../images/banner/arrow.svg');
+        position: absolute;
+    }
+}
+
+.button {
+    position: relative;
+    border: none;
+    transition: all 0.3s;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.upper {
+    text-transform: uppercase;
 }

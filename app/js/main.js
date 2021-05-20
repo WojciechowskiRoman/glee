@@ -11,10 +11,14 @@ $(function() {
        dots: true,
        swipe: false,
        adaptiveHeight: true,
-       autoplay: true,
-       autoplaySpeed: 3000
+    //    autoplay: true,
+    //    autoplaySpeed: 3000
     });
 
-    var mixer = mixitup('.week-products__cards');
+    $(window).on('scroll', function() {
+        $('.menu').toggleClass('menu--active', $(this).scrollTop() > 0);
+    });
+
+    var mixer = mixitup('.product__cards');
 
 });

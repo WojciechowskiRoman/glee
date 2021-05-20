@@ -1,5 +1,5 @@
 .features {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 
     &__list {
         display: flex;
@@ -7,63 +7,55 @@
     }
 
     &__item {
-        @extend %flexCenter;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex: 0 1 33.333%;
         min-height: 171px;
-        background-color: rgba(#fcd7b6, 0.2);
-        border-right: 1px solid;
-        border-color: rgba(#243f4d, 0.1);
+        background-color: rgba($accent, 0.2);
+        border-right: 1px solid rgba($productName, 0.1);
         transition: background-color 0.5s;
 
         &:hover {
-            background-color: rgba(#e7b589, 0.2);
+            background-color: rgba(231, 181, 137, 0.2);
         }
     }
 
+    &__content {
+        padding-left: 72px;
+        display: flex;
+        flex-direction: column;
+        max-width: 288px;
+        width: 100%;
+        background-position: left 10px;
+        background-repeat: no-repeat;
+        background-size: auto;
+
+        &--support {
+            background-image: url('../images/features/support.svg');
+        }
+    
+        &--delivery {
+
+            background-image: url('../images/features/delivery.svg');
+        }
+    
+        &--payment {
+
+            background-image: url('../images/features/payment.svg');
+        }  
+    }
+
     &__title {
-        @extend %DMSans-700;
         font-size: 18px;
         line-height: 2.22;
-        color: #414141;
+        color: #414141;       
     }
 
     &__descr {
-        @extend %DMSans-400;
-        font-size: 16px;
+        font-weight: 400;
         line-height: 1.88;
         color: #585858;
-    }
-}
-
-.features__item-content {
-    padding-left: 9%;
-    position: relative;
-
-    &::before {
-        content: '';
-        position: absolute;
-        background-repeat: no-repeat;
-        width: 54px;
-        height: 54px;
-    }
-
-    &--support::before {
-        left: -12%;
-        top: 8%;
-        background-image: url('../../../images/features/support.svg');
-    }
-
-    &--delivery::before {
-        left: -10%;
-        background-image: url('../../../images/features/delivery.svg');
-    }
-
-    &--payment::before {
-        left: -7%;
-        background-image: url('../../../images/features/payment.svg');
-    }  
-
-    &--payment {
-        padding-left: 12%;
     }
 }
