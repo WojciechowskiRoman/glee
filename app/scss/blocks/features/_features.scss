@@ -13,7 +13,7 @@
         align-items: center;
         flex: 0 1 33.333%;
         min-height: 171px;
-        background-color: rgba($accent, 0.2);
+        background-color: $accentBG;
         border-right: 1px solid rgba($productName, 0.1);
         transition: background-color 0.5s;
 
@@ -37,12 +37,10 @@
         }
     
         &--delivery {
-
             background-image: url('../images/features/delivery.svg');
         }
     
         &--payment {
-
             background-image: url('../images/features/payment.svg');
         }  
     }

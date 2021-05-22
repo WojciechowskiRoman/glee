@@ -6,6 +6,7 @@ body {
     font-size: 16px;
     line-height: 1.2;
     font-family: 'DMSans', 'sans-serif';
+    font-weight: 500;
     display: flex;
     flex-direction: column;
 }
@@ -54,18 +55,55 @@ a {
     border-radius: 0;
     transition: all 0.5s;
 
-    &::after {
-        content: url('../images/banner/arrow.svg');
+    svg {
         position: absolute;
+        right: 9%;
+        top: 42%;
+        transition: all 0.5s;
+    }
+
+    &:hover{
+        background-color: $linkButton;
+        color: $hover;
+
+        svg {
+            fill: $hover;
+        }   
+    }
+
+    &:active, &:focus {
+        background-color: $hover;
+        color: $linkButton;
+        box-shadow: 0 0 25px $linkButton;
+
+        svg {
+            fill: $linkButton;
+        }
     }
 }
 
 .button {
+
     position: relative;
     border: none;
     transition: all 0.3s;
     z-index: 1;
     cursor: pointer;
+
+    &__product-type {
+        padding: 15px 0;
+        font-weight: 700;
+        background-color: transparent;
+        color: #8b8b8b;
+
+        &:hover {
+            color: #1a1a1a;
+        }
+
+        &:active, &:focus {
+            color: $accent;
+        }
+    }
 }
 
 .sr-only {

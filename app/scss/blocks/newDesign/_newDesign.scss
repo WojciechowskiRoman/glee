@@ -1,0 +1,74 @@
+.newDesign {
+
+    &__title {
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    &__card {
+        position: relative;
+        margin: 0 0px 34px 10px;
+        max-width: 370px;
+        width: 100%;
+        min-height: 246px;
+        background-color: #f8f8f8;
+        overflow: hidden;
+        transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+
+        &--couch {
+            position: relative;
+
+            .newDesign__img {
+                position: absolute;
+                right: -22%;
+                top: 53%;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px $hover;
+        }
+
+        &:focus, &:active {
+            background-color: $hover;
+
+            .newDesign__subtitle {
+                color: $accent;
+            }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &__info {
+        padding: 41px 0 0 27px;
+    }
+
+    &__card-title {
+        margin-bottom: 10px;
+        max-width: 171px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__subtitle {
+        font-family: 'DMSans', 'sans-serif';
+        font-weight: 700;
+        color: $hover;
+    }
+
+    &__img {
+        position: absolute;
+        right: 15%;
+        top: 37%;
+        margin-top: -8%;
+        margin-bottom: -4%;
+    }
+}

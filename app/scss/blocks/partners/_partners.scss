@@ -1,0 +1,15 @@
+.partners {
+
+    background-color: $accentBG;
+
+    &__list {
+        padding: 86px 0 111px;
+        display: flex;
+    }
+
+    &__img {
+        height: calc(15vh - 100px);
+        width: auto;
+        margin: 0 auto;
+    }
+}

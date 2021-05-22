@@ -8,22 +8,26 @@
     font-weight: 500;
 }
 
-%DMSans-400 {
-    font-weight: 400;
-}
-
-%DMSans-500 {
-    font-weight: 500;
-}
-
-%DMSans-700 {
-    font-weight: 700;
-}
-
 $accent: #fcd7b6;
+
+$accentBG: rgba(#fcd7b6 , 0.2);
 
 $hover: #a3bbc8;
 
 $productName: #243f4d;
 
 $footer: #7b7b7b;
+
+$linkButton: #243f4d;
+
+$blog: #262626;
+
+$footerTitle: #1f2044;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
