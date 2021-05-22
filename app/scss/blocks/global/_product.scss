@@ -105,13 +105,21 @@
         cursor: pointer;
         transition: background-color 0.5s;
 
-        &:hover, &:focus, &:active {
+        &:hover {
             background-color: $hover;
         }
 
         &:hover, &:focus {
             svg {
                 fill: #fff;
+            }
+        }
+
+        &:focus, &:active {
+            background-color: $accent;
+
+            svg {
+                fill: $linkButton;
             }
         }
     } 
