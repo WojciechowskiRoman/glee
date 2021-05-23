@@ -8,34 +8,34 @@
     }
 
     &__product {
-        margin-bottom: 5.5%;
-        padding-right: 5%;
+        margin-bottom: 5.4%;
         position: relative;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 21%;
         max-width: 870px;
         width: 100%;
         min-height: 390px;
-        background-color: $accentBG;
-    }
+        background-color: rgba($accent, 0.4);
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        &:nth-child(2) {
+            padding-left: 24%;
+        }
     }
 
     &__img {
         position: absolute;
         left: 7vw;
+        bottom: 7vh;
         max-width: 12vw;
     }
 
-    &__title {
+    &__name {
         margin-bottom: 24px;
         text-align: left;
-        max-width: 250px;
+        max-width: 342px;
+        width: 100%;
         font-size: 26px;
         line-height: 1.23;
     }
@@ -47,19 +47,15 @@
         line-height: 1.88;
     }
 
-    &__text--second {
-        max-width: 344px;
-    }
-
     &__link {
         padding: 24px 0 25px 20px;
         max-width: 180px;
-        border: solid 1px #436372;
+        border: solid 1px $grey-blue;
         border-radius: 5px;
-        color: $linkButton;
+        color: $dark-blue;
         
         svg {
-            fill: $linkButton;
+            fill: $dark-blue;
         }
     }
 

@@ -1,6 +1,6 @@
 .menu {
 
-    padding: 43px 0 44px;
+    padding: 43px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,33 +20,5 @@
 
     &__link {
         padding: 13px 0;
-        font-weight: 500;
-        font-size: 15px;
-        color: #436372;
-
-        &--footer {
-            padding: 6px 0;
-            position: relative;
-            font-weight: 400;
-            color: $footer;
-
-            &::after {
-                position: absolute;
-            }
-        }
-    
-        &:after {
-            display: block;
-            content: '';
-            left: 0;
-            height: 4px;
-            width: 0;
-            background-color: $accent;
-            transition: width 0.3s ease-in-out;
-        }
-
-        &:hover::after {
-            width: 100%;
-        }
     }
 }

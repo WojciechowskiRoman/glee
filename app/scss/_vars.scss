@@ -1,28 +1,16 @@
-%rubik-400 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-}
-
-%rubik-500 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-}
-
 $accent: #fcd7b6;
 
-$accentBG: rgba(#fcd7b6 , 0.2);
+$sky-blue: #a3bbc8;
 
-$hover: #a3bbc8;
+$dark-blue: #243f4d;
 
-$productName: #243f4d;
+$grey-blue: #436372;
 
-$footer: #7b7b7b;
+$light-grey: #7b7b7b;
 
-$linkButton: #243f4d;
+$dark-grey: #414141;
 
-$blog: #262626;
-
-$footerTitle: #1f2044;
+$dark: #262626;
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

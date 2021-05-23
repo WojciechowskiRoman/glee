@@ -1,12 +1,11 @@
 .footer {
 
-    @extend %rubik-400;
     font-size: 14px;
-    color: $footer;
+    color: $light-grey;
 
     &__top {
-        padding: 74px 0 57px;
-        border-bottom: 1px solid rgba($hover, 0.4);
+        padding: 74px 0 64px;
+        border-bottom: 1px solid rgba($sky-blue, 0.4);
     }
 
     &__columns {
@@ -14,24 +13,45 @@
         justify-content: space-between;
     }
 
-    &__contacts {
-        max-width: 213px;
-        width: 100%;
-    }
-
     &__column {
-        &--services, &--account {
-            max-width: 215px;
-            width: 100%;
+        max-width: 215px;
+        width: 100%;
+
+        &--subscribe {
+            max-width: 271px;
         }
     }
 
-    &__column:not(.footer__contacts) {
+    &__column:not(.footer__column--contacts) {
         padding-top: 21px;
     }
 
     &__column:not(:last-child) {
         padding-right: 10px;
+    }
+
+    &__contacts {
+        padding-bottom: 15px;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        color: $light-grey;
+        transition: color 0.5s;
+        &:hover {
+            color: $sky-blue;
+        }
+
+        &:active, &:focus {
+            color: $dark;
+        }
+
+        &:nth-child(1) {
+            padding-bottom: 12px;
+        }
+        
+        &--upper {
+            text-transform: uppercase;
+        }
     }
 
     &__address {
@@ -40,53 +60,34 @@
         line-height: 1.7;
     }
 
-    &__phone, &__email {
-        display: block;
-        padding-bottom: 15px;
-        color: $footer;
-        transition: color 0.5s;
-        &:hover {
-            color: $hover;
-        }
-
-        &:active, &:focus {
-            color: $blog;
-        }
-    }
-
     &__title {
-        margin-bottom: 21px;
+        margin-bottom: 23px;
         font-size: 16px;
         text-transform: uppercase;
-        color: $footerTitle;
+        color: #1f2044;
+        text-align: left;
     }
 
     &__item {
         margin-bottom: 14px;
+    }
 
-        &--bottom {
-            
-            &:not(:last-child) {
-                padding: 0 14px;
-                border-right: 1px solid $footer;
-            }
-        
-            &:last-child {
-                padding-left: 11px;
-            }
+    &__item-bottom {
+
+        &:not(:last-child) {
+            padding: 0 16px;
+            border-right: 1px solid $light-grey;
+        }
+    
+        &:last-child {
+            padding-left: 15px;
         }
     }
 
     &__link {
-
-        &--bottom {
-            padding: 14px 3px;
-        }
-    }
-
-    &--subscribe {
-        max-width: 271px;
-        width: 100%;
+        font-size: 14px;
+        font-weight: 400;
+        color: $light-grey;
     }
 
     &__text {
@@ -101,7 +102,7 @@
         padding: 12px 0;
         width: 100px;
         color: #fff;
-        background-color: $hover;
+        background-color: $sky-blue;
 
         &::before {
             content: '';
@@ -110,18 +111,18 @@
             left: 0;
             right: 0;
             top: 100%;
-            background-color: $linkButton;
+            background-color: $dark-blue;
             z-index: -1;
             transition: color 0.5s, background-color 0.5s, top 0.5s;
         }
 
         &:hover:before {
             top: 0;
-            color: $hover;
+            color: $sky-blue;
         }
 
         &:active, &:focus {
-            background-color: $linkButton;
+            background-color: $dark-blue;
             color: $accent;
         }
     }
@@ -139,26 +140,27 @@
     &__label {
         padding: 12px 0;
         transition: box-shadow 0.5s;
+        
         &:hover {
-            box-shadow: 0 0 15px $hover;
+            box-shadow: 0 0 15px $sky-blue;
         }
 
         &:focus, &:active {
             box-shadow: 0 0 15px $accent;
         }
     }
-}
 
-.form__email {
-    padding: 16px 12px;
-    margin-right: -3px;
-    width: 170px;
-    height: 38px;
-    background-color: $accent;
-    background-color: rgba(252,215,182,0.2);
-    border: none;
-    outline: transparent;
-    &::placeholder {
-        color: #234969;
+    &__email {
+        padding: 16px 12px;
+        margin-right: -3px;
+        width: 170px;
+        height: 38px;
+        background-color: $accent;
+        background-color: rgba(252,215,182,0.2);
+        border: none;
+        outline: transparent;
+        &::placeholder {
+            color: #234969;
+        }
     }
 }

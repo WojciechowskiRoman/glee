@@ -1,0 +1,32 @@
+.filter {
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5%;
+
+        &--novelty {
+            margin-bottom: 5%;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__button {
+        padding: 15px 0;
+        font-weight: 700;
+        background-color: transparent;
+
+        &:hover {
+            color: #1a1a1a;
+        }
+
+        &:active, &:focus {
+            color: $accent;
+        }
+    }
+}

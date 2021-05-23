@@ -11,8 +11,8 @@ $(function() {
        dots: true,
        swipe: false,
        adaptiveHeight: true,
-       autoplay: true,
-       autoplaySpeed: 3000
+    //    autoplay: true,
+    //    autoplaySpeed: 3000
     });
 
     $('.partners__list').slick({
@@ -20,16 +20,16 @@ $(function() {
         dots: false,
         slidesToShow: 5,
         centerPadding: '40px',
-        autoplay: true,
-        autoplaySpeed: 5000
+        // autoplay: true,
+        // autoplaySpeed: 5000
      });
 
     $(window).on('scroll', function() {
         $('.menu').toggleClass('menu--active', $(this).scrollTop() > 0);
     });
 
-    var cardsContainerFisrt = document.querySelector('[data-ref="cards-container__first"]');
-    var cardsContainerSecond = document.querySelector('[data-ref="cards-container__second"]');
+    var cardsContainerFisrt = document.querySelector('[data-ref="filter__first"]');
+    var cardsContainerSecond = document.querySelector('[data-ref="filter__second"]');
 
     var config = {
         controls: {

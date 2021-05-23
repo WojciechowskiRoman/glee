@@ -13,47 +13,55 @@
         align-items: center;
         flex: 0 1 33.333%;
         min-height: 171px;
-        background-color: $accentBG;
-        border-right: 1px solid rgba($productName, 0.1);
+        background-color: rgba($accent, 0.2);
+        border-right: 1px solid rgba($dark-blue, 0.1);
         transition: background-color 0.5s;
+        padding-left: 4%;
 
         &:hover {
             background-color: rgba(231, 181, 137, 0.2);
         }
-    }
 
-    &__content {
-        padding-left: 72px;
-        display: flex;
-        flex-direction: column;
-        max-width: 288px;
-        width: 100%;
-        background-position: left 10px;
-        background-repeat: no-repeat;
-        background-size: auto;
-
-        &--support {
-            background-image: url('../images/features/support.svg');
+        &:nth-child(2) {
+            .features__text {
+                margin-bottom: 15px;
+            }
         }
-    
-        &--delivery {
-            background-image: url('../images/features/delivery.svg');
-        }
-    
-        &--payment {
-            background-image: url('../images/features/payment.svg');
-        }  
     }
 
     &__title {
+        position: relative;
+        max-width: 213px;
+        width: 100%;
         font-size: 18px;
-        line-height: 2.22;
-        color: #414141;       
+        line-height: 1.5;
+        color: $dark-grey;   
+        text-align: left;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: -73px;
+            top: 10px;
+        }
+
+        &--support::before {
+            content: url('../images/features/support.svg');
+        }
+    
+        &--delivery::before {
+            content: url('../images/features/delivery.svg');
+        }
+    
+        &--payment::before {
+            content: url('../images/features/payment.svg');
+        }      
     }
 
-    &__descr {
-        font-weight: 400;
-        line-height: 1.88;
+    &__text {
+        max-width: 214px;
+        width: 100%;
+        line-height: 1.9;
         color: #585858;
     }
 }

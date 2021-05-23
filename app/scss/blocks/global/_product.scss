@@ -1,32 +1,9 @@
 .product {
 
-    &__types {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2.5%;
-
-        &--newDesign {
-            margin-bottom: 5%;
-        }
-    }
-
-    &__type {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
-
-    &__cards {
-        margin-bottom: 162px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        &--design {
-            margin-bottom: 90px;
-        }
-    }
+    margin-bottom: 162px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     &__card {
         margin: 0 10px 30px 0;
@@ -51,26 +28,24 @@
     }
 
     &__img {
+        position: relative;
         display: block;
         padding-top: 50px;
-        position: relative;
         transition: transform 0.5s;
     }
 
-    &__info {
-        padding: 64px 0 38px;
-    }
-
-    &__title {
+    &__name {
+        padding-top: 64px;
         font-size: 16px;
         font-weight: 500;
         line-height: 2.5;
-        color: $productName;
+        color: $dark-blue;
     }
 
     &__cost {
+        padding-bottom: 38px;
         font-weight: 700;
-        color: $hover;
+        color: $sky-blue;
     }
 
     &__menu {
@@ -79,7 +54,7 @@
         position: absolute;
         left: 26px;
         right: 0;
-        bottom: 37%;
+        bottom: 0;
         opacity: 0;
         transition: opacity 0.5s;
     }
@@ -87,26 +62,26 @@
     &__menu-item {
         transition: all 0.5s;
         svg {
+            fill: $sky-blue;
             margin: auto;
         }
     }
 
-    &__link, &__button {
+    &__action {
         margin-right: 19px;
         display: flex;
         width: 45px;
         height: 45px;
-        background-repeat: no-repeat;
-        background-position: 11px;
         background-color: #fff;
-        border-color: transparent;
-        border-radius: 50%;
         box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-        cursor: pointer;
         transition: background-color 0.5s;
 
+        &:first-child {
+            border-radius: 50%;
+        }
+
         &:hover {
-            background-color: $hover;
+            background-color: $sky-blue;
         }
 
         &:hover, &:focus {
@@ -119,7 +94,7 @@
             background-color: $accent;
 
             svg {
-                fill: $linkButton;
+                fill: $dark-blue;
             }
         }
     } 

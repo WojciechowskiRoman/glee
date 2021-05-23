@@ -2,7 +2,7 @@
 
     position: relative;
 
-    &__top{
+    &__top {
         margin-bottom: 38px;
         display: flex;
         justify-content: space-between;
@@ -14,7 +14,7 @@
         font-size: 16px;
         font-family: 'DMSans' ,'sans-serif';
         font-weight: 700;
-        color: $blog;
+        color: $dark;
         transition: color 0.3s, box-shadow 0.3s;
 
         svg {
@@ -31,10 +31,10 @@
         }
 
         &:focus, &:active {
-            color: $hover;
+            color: $sky-blue;
 
             svg {
-                fill: $hover;
+                fill: $sky-blue;
             }
         }
     }
@@ -49,24 +49,26 @@
         position: relative;
         display: flex;
         flex-direction: column;
+        flex: 1 1 auto;
         max-width: 370px;
         background-color: #fff;
         transition: box-shadow 0.5s, background-color 0.5s;
+        color: $dark;
 
         &:not(:last-child) {
             margin-right: 10px;
         }
 
         &:hover {
-            box-shadow: 0 0 35px $hover;
+            box-shadow: 0 0 35px $sky-blue;
         }
 
         &:active, &:focus {
-            background-color: $hover;
+            background-color: $sky-blue;
 
             .blog__type {
                 background-color: $accent;
-                color: $blog;
+                color: $dark;
             }
         }
     }
@@ -87,43 +89,42 @@
         font-size: 14px;
         color: #fff;
         border-radius: 20px;
-        background-color: $hover;
+        background-color: $sky-blue;
         transition: color 0.5s, background-color 0.5s;
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        padding: 33px 27px 0 27px;
-        color: $blog;
-    }
-
     &__subtitle {
+        padding: 33px 27px 0 27px;
         padding-bottom: 18px;
         flex: 1 1 auto;
-        max-width: 292px;
+        max-width: 335px;
+        width: 100%;
         font-weight: 500;
         font-size: 18px;
     }
 
     &__info {
-        padding: 17px 0 27px;
+        padding: 18px 54px 27px 11px;
+        margin-left: 23px;
+        max-width: 300px;
         display: flex;
+        justify-content: flex-start;
         color: #222933;
-        @extend %rubik-400;
+        font-family: 'Rubik', sans-serif;
         font-size: 12px;
         border-top: 1px solid #e0e0e0;
+        text-transform: uppercase;
     }
 
     &__data {
+        display: block;
         margin-right: 46px;
     }
 
     &::before {
         content: '';
         position: absolute;
-        background-color: $accentBG;
+        background-color: rgba($accent, 0.2);
         max-height: 174px;
         height: 100%;
         width: 100%;

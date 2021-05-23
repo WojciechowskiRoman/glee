@@ -1,0 +1,125 @@
+.novelty {
+
+    &__title {
+        margin-bottom: 8px;
+    }
+
+    &__list {
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        
+        position: relative;
+        margin: 0 0px 34px 10px;
+        max-width: 370px;
+        width: 100%;
+        min-height: 246px;
+        background-color: #f8f8f8;
+        overflow: hidden;
+        transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
+
+        &--couch {
+            position: relative;
+
+            .novelty__img {
+                position: absolute;
+                right: -22%;
+                top: 53%;
+            }
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px $sky-blue;
+        }
+
+        &:focus, &:active {
+            background-color: $sky-blue;
+
+            .novelty__type {
+                color: $accent;
+            }
+        }
+    }
+
+    &__link {
+        padding: 41px 0 0 27px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        max-width: 174px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+
+    &__type {
+        font-family: 'DMSans', 'sans-serif';
+        font-weight: 700;
+        color: $sky-blue;
+    }
+
+    &__img {
+        position: absolute;
+        right: 15%;
+        top: 37%;
+        margin-top: -8%;
+        margin-bottom: -4%;
+    }
+
+    &__video {
+        margin-bottom: 110px;
+        display: block;
+        position: relative;
+        min-height: 500px;
+        background-image: url('../images/video/video.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url('../images/video/circle.svg');
+            background-size: 98px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 1s;
+        }
+    
+        &::after {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../images/video/play.svg');
+            background-size: 22px 25px;
+            transition: background-size 0.5s;
+        }
+    
+        &:hover{
+            &::before {
+                background-image: url('../images/video/play2.svg');
+                background-size: 127px;
+            }
+    
+            &::after {
+                background-size: 27px 30px;
+            }
+        }
+    }
+}
