@@ -11,8 +11,8 @@ $(function() {
        dots: true,
        swipe: false,
        adaptiveHeight: true,
-    //    autoplay: true,
-    //    autoplaySpeed: 3000
+       autoplay: true,
+       autoplaySpeed: 3000
     });
 
     $('.partners__list').slick({
@@ -20,8 +20,6 @@ $(function() {
         dots: false,
         slidesToShow: 5,
         centerPadding: '40px',
-        // autoplay: true,
-        // autoplaySpeed: 5000
      });
 
     $(window).on('scroll', function() {
