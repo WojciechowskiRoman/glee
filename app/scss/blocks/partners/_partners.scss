@@ -3,13 +3,11 @@
     background-color: rgba($accent, 0.2);
 
     &__list {
-        padding: 86px 0 114px;
-        display: flex;
+        padding: 95px 0 59px;
+        height: 265px;
     }
 
     &__img {
-        height: calc(15vh - 100px);
-        width: auto;
         margin: 0 auto;
     }
 }
