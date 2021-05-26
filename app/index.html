@@ -22,9 +22,9 @@
 
     <header class="header">
         <div class="container">
-            <nav class="menu">
-                <a class="logo" href="#body">
-                    <img src="images/logo.svg"  alt="logo, go to main page">
+            <nav class="header__menu menu">
+                <a class="logo" href="#body" title="go to main page">
+                    <img src="images/logo.svg"  alt="logo">
                 </a>
 
                 <ul class="menu__list">
@@ -51,7 +51,7 @@
                 <ul class="userbar">
                     <li class="userbar__item">
                         <button class="userbar__button button button--round" type="button">
-                            <svg class="icon" viewBox="0 0 15.28 15.281" width="15.28" height="15.281">
+                            <svg viewBox="0 0 15.28 15.281" width="15.28" height="15.281">
                                 <use xlink:href="images/sprite.svg#search"></use>
                             </svg>
                             <span class="sr-only">Site search</span>
@@ -60,7 +60,7 @@
                     
                     <li class="userbar__item">
                         <a class="userbar__link userbar__link--like" href="#">
-                            <svg class="icon" viewBox="0 0 17.87 15.531" width="17.87" height="15.531">
+                            <svg viewBox="0 0 17.87 15.531" width="17.87" height="15.531">
                                 <use xlink:href="images/sprite.svg#like"></use>
                             </svg>
                             <span class="userbar__count">0</span>
@@ -68,15 +68,15 @@
                     </li>
                     <li class="userbar__item">
                         <a class="userbar__link userbar__link--cart" href="#">
-                            <svg class="icon" viewBox="0 0 18.94 16.969" width="18.94" height="16.969">
+                            <svg viewBox="0 0 18.94 16.969" width="18.94" height="16.969">
                                 <use xlink:href="images/sprite.svg#cart"></use>
                             </svg>
                             <span class="userbar__count">0</span>
                         </a>
                     </li>
                     <li class="userbar__item">
-                        <button class="userbar__button userbar__button--menu button button--round">
-                            <svg class="icon" viewBox="0 0 20.03 20.031" width="20.03" height="20.031" fill="#fff">
+                        <button class="userbar__button button button--round" type="button">
+                            <svg viewBox="0 0 20.03 20.031" width="20.03" height="20.031" fill="#fff">
                                 <use xlink:href="images/sprite.svg#dots"></use>
                             </svg>
                             <span class="sr-only">Menu</span>
@@ -91,7 +91,7 @@
     <main class="main">
 
         <section class="banner">
-            <h2 class="sr-only">Banner</h2>
+            <h2 class="sr-only">Promotions of the week</h2>
             <div class="container">
                 <ul class="banner__slider">
                     <li class="banner__item">
@@ -103,7 +103,7 @@
                                 </p>
                                 <a class="banner__link link-button" href="#">
                                     Shop Now
-                                    <svg class="icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
+                                    <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
                                         <use xlink:href="images/sprite.svg#arrow"></use>
                                     </svg>
                                 </a>
@@ -122,7 +122,7 @@
                                 </p>
                                 <a class="banner__link link-button" href="#">
                                     Shop Now
-                                    <svg class="icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
+                                    <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
                                         <use xlink:href="images/sprite.svg#arrow"></use>
                                     </svg>
                                 </a>
@@ -141,7 +141,7 @@
                                 </p>
                                 <a class="banner__link link-button" href="#">
                                     Shop Now
-                                    <svg class="icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
+                                    <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9" fill="#fff">
                                         <use xlink:href="images/sprite.svg#arrow"></use>
                                     </svg>
                                 </a>
@@ -190,8 +190,7 @@
 
         <section class="products">
             <div class="container container--small">
-                <h2 class="products__title title">Products of the week</h2>
-
+                <h2 class="title">Products of the week</h2>
                 <div class="filter" data-ref="filter__first">
                     <ul class="filter__list">
                         <li class="filter__item">
@@ -210,31 +209,30 @@
                             <button class="filter__button button" type="button" data-filter=".decor">Decor</button>
                         </li>
                     </ul>
-                    <article class="product">
-                        <h2 class="sr-only">Products list</h2>
+                    <div class="filter__product product">
                         <article class="product__card mix all">
                             <div class="product__img">
                                 <img src="images/week-products/radio1.png" alt="chair">
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -243,7 +241,8 @@
                             </div> 
                             <h3 class="product__name">Wooden radio</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span>29.00
+                                <span>$</span>
+                                    29.00
                             </span>    
                         </article>
                         <article class="product__card mix chairs furnitures">
@@ -252,23 +251,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -277,7 +276,9 @@
                             </div>    
                             <h3 class="product__name">Wooden chair</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>                         
+                                <span>$</span>
+                                    29.00
+                            </span>                        
                         </article>
                         <article class="product__card mix chairs furnitures">
                             <div class="product__img">
@@ -285,23 +286,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -310,7 +311,9 @@
                             </div>
                             <h3 class="product__name">White chair</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>      
+                                <span>$</span>
+                                    29.00
+                            </span>     
                         </article>
                         <article class="product__card mix furnitures">
                             <div class="product__img">
@@ -318,23 +321,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -343,7 +346,9 @@
                             </div>  
                             <h3 class="product__name">Retro table</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>   
+                                <span>$</span>
+                                    29.00
+                            </span> 
                         </article>
                         <article class="product__card mix furnitures">
                             <div class="product__img">
@@ -351,23 +356,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -376,7 +381,9 @@
                             </div>
                             <h3 class="product__name">Wooden radio</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>           
+                                <span>$</span>
+                                    29.00
+                            </span>           
                         </article>
                         <article class="product__card mix chairs furnitures">
                             <div class="product__img">
@@ -384,23 +391,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -409,7 +416,9 @@
                             </div>             
                             <h3 class="product__name">Wooden chair</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>  
+                                <span>$</span>
+                                    29.00
+                            </span> 
                         </article>
                         <article class="product__card mix chairs furnitures">
                             <div class="product__img">
@@ -417,23 +426,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -442,7 +451,9 @@
                             </div>  
                             <h3 class="product__name">White chair</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>     
+                                <span>$</span>
+                                    29.00
+                            </span>   
                         </article>
                         <article class="product__card mix furnitures">
                             <div class="product__img">
@@ -450,23 +461,23 @@
                                 <ul class="product__menu">
                                     <li class="product__menu-item">
                                         <a class="product__action" href="#" title="go to product card">
-                                            <svg class="card" viewBox="0 0 20 20" width="20" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
                                                 <use xlink:href="images/sprite.svg#card"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to cart</span>
-                                            <svg class="card" viewBox="0 0 22 20" width="22" height="20">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
                                                 <use xlink:href="images/sprite.svg#to-cart"></use>
                                             </svg>
                                         </button>
                                     </li>
                                     <li class="product__menu-item">
-                                        <button class="product__action button button--round">
+                                        <button class="product__action button button--round" type="button">
                                             <span class="sr-only">add to favorite</span>
-                                            <svg class="card" viewBox="0 0 22 18" width="22" height="18">
+                                            <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
                                                 <use xlink:href="images/sprite.svg#to-favorite"></use>
                                             </svg>
                                         </button>
@@ -475,9 +486,11 @@
                             </div>        
                             <h3 class="product__name">Retro table</h3>
                             <span class="product__cost">
-                            <span class="currency">$</span> 29.00</span>      
+                                <span>$</span>
+                                    29.00
+                            </span>    
                         </article>
-                    </article>
+                    </div>
                 </div>
             </div>
 
@@ -493,7 +506,7 @@
                         </span>
                         <a class="offer__link link-button" href="#">
                             View More
-                            <svg class="icon" viewBox="0 0 22 9" width="22" height="9">
+                            <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
                                 <use xlink:href="images/sprite.svg#arrow"></use>
                             </svg>
                         </a>
@@ -508,7 +521,7 @@
                         </span>
                         <a class="offer__link link-button" href="#">
                             View More
-                            <svg class="icon" viewBox="0 0 22 9" width="22" height="9">
+                            <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
                                 <use xlink:href="images/sprite.svg#arrow"></use>
                             </svg>
                         </a>
@@ -521,8 +534,7 @@
             <div class="container container--small">
                 <h2 class="novelty__title title">New Design</h2>
                 <div class="filter" data-ref="filter__second">
-
-                    <ul class="filter__list filter__list--novelty">
+                    <ul class="novelty__filter-list filter__list ">
                         <li class="filter__item">
                             <button class="filter__button button" type="button" data-filter="all">All</button>
                         </li>
@@ -539,9 +551,7 @@
                             <button class="filter__button button" type="button" data-filter=".decor">Decor</button>
                         </li>
                     </ul>
-
-                    <article class="novelty__list">
-                        <h2 class="sr-only">Products list</h2>
+                    <div class="filter__novelty">
                         <article class="novelty__card novelty__card--couch mix furnitures">
                             <a class="novelty__link" href="#" title="go to product card">
                                 <h3 class="novelty__name">Beat Flat Pendant Black</h3>
@@ -584,63 +594,64 @@
                                 <img class="novelty__img" src="images/novelty/sofa4.png" alt="sofa">
                             </a>
                         </article>
-                    </article> 
+                    </div> 
                 </div>
             </div>
-            <a class="novelty__video" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" title="open video"></a>
+            <a class="novelty__video" data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" title="open video">
+                <svg class="novelty__video-icon" viewBox="0 0 127 127" width="127" height="127" fill="#a3bbc8">
+                    <use xlink:href="images/sprite.svg#play-video"></use>
+                </svg>
+            </a>
         </section>
 
         <section class="blog">
             <div class="container container--small">
-                <div class="blog__top">
-                    <h2 class="blog__title title">Our Insights & Articles</h2>
-                    <a class="blog__link" href="#">View All
-                        <svg viewBox="0 0 6.1 10.97" width="6.1" height="10.97" fill= '#262626'>
-                            <path class="cls-1" d="M1539.33,4295.69a0.53,0.53,0,0,1-.41-0.19,0.6,0.6,0,0,1-.15-0.4,0.631,0.631,0,0,1,.17-0.43l4.55-4.47-4.55-4.48a0.607,0.607,0,0,1-.17-0.42,0.629,0.629,0,0,1,.15-0.41,0.559,0.559,0,0,1,.8-0.02l4.98,4.9,0.01,0.01a0.657,0.657,0,0,1,.12.17h0a0.7,0.7,0,0,1,.05.25h0a0.742,0.742,0,0,1-.05.25h0a0.61,0.61,0,0,1-.12.16c0,0.01-.01.01-0.01,0.02l-4.98,4.9A0.589,0.589,0,0,1,1539.33,4295.69Z" transform="translate(-1538.78 -4284.72)"/>
-                        </svg>
-                    </a>
-                </div>
-                <article class="blog__list">
-                    <h2 class="sr-only">Blogs list</h2>
+                <h2 class="blog__title title">Our Insights & Articles
+                    <a class="blog__link" href="#">View All</a>
+                </h2>
+                <div class="blog__list">
                     <article class="blog__item">
-                        <a class="blog__item-link" href="#" title="show blog post"></a>
-                        <img class="blog__img" src="images/blog/blog1.png" alt="blog image">
-                        <span class="blog__type">news</span>
+                        <div class="blog__img">
+                            <img src="images/blog/blog1.png" alt="blog image">
+                            <a class="blog__type" href="#">news</a>
+                        </div>  
                         <h3 class="blog__subtitle">
                             Diusmod tempor incididunt ut labore et dolore magna aliqua. 
                             Ut enim ad minim veniam
                         </h3>
                         <span class="blog__info">
                             <time class="blog__date" datetime="2020-01-28">28 JANUARY, 2020</time>
-                            <p>by admin</p>
+                            <p class="blog__author">by admin</p>
                         </span>
                     </article>
                     <article class="blog__item">
-                        <a class="blog__item-link" href="#" title="show blog post"></a>
-                        <img class="blog__img" src="images/blog/blog2.png" alt="blog image">
-                        <span class="blog__type">news</span>
+                        <div class="blog__img">
+                            <img  src="images/blog/blog2.png" alt="blog image">
+                            <a class="blog__type" href="#">news</a>
+                        </div>
                         <h3 class="blog__subtitle">
                             Aonsectetur adipisicing elit, sed do eiusmod 
                             tempor incididunt ut labore et dolore
                         </h3>
                         <span class="blog__info">
-                            <time class="blog__date" datetime="2020-01-28">28 january, 2020</time>
-                            <p>by admin</p>
+                            <time class="blog__date" datetime="2020-01-28">28 JANUARY, 2020</time>
+                            <p class="blog__author">by admin</p>
                         </span>
                     </article>
                     <article class="blog__item">
-                        <a class="blog__item-link" href="#" title="show blog post"></a>
-                        <img class="blog__img" src="images/blog/blog3.png" alt="blog image">
-                        <span class="blog__type">news</span>
+                        <div class="blog__img">
+                            <img src="images/blog/blog3.png" alt="blog image">
+                            <a class="blog__type" href="#">news</a>
+                        </div>
                         <h3 class="blog__subtitle">
                             Rncididunt ut labore et dolore magna aliqua. Ut enim
                         </h3>
                         <span class="blog__info">
-                            <time class="blog__date" datetime="2020-01-28">28 january, 2020</time>
-                            <p>by admin</p>
+                            <time class="blog__date" datetime="2020-01-28">28 JANUARY, 2020</time>
+                            <p class="blog__author">by admin</p>
                         </span>
                     </article>
-                </article>
+                </div>
             </div>
         </section>
          
@@ -686,112 +697,110 @@
 
     <footer class="footer">
         <div class="container container--small">
-            <div class="footer__top">
-                <ul class="footer__columns">
-                    <li class="footer__column footer__column--contacts">
-                        <a class="logo logo--footer" href="#body">
-                            <img src="images/logo.svg" alt="logo, go to main page">
-                        </a>
-                        <address class="footer__address">
-                            <span class="footer__contacts">
-                                <span class="footer__contacts--upper">address:</span> 
-                                4772 Wines Lane
-                                Houston, TX 77032
-                            </span>
-                            <a class="footer__contacts" href="tel:+8323475843">
-                                <span class="footer__contacts--upper">Telephone: +832-347-5843</span>
-                            </a>
-                            <a class="footer__contacts" href="mailto:contact@Glee.com">
-                                <span class="footer__contacts--upper">email</span>: contact@Glee.com
-                            </a>
-                        </address>
-                    </li>
-                    <li class="footer__column">
-                        <span class="footer__title title">services</span>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">About us</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Return Policy</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Our Blog</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Contact Us</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Terms & Condition</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="footer__column">
-                        <span class="footer__title title">account</span>
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Your Account</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Checkout</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Login</a>
-                            </li>
-
-                            <li class="footer__item">
-                                <a class="footer__link link" href="#">Register</a>
-                            </li>
-                        </ul>
-                    </li>
-                        
-                    <li class="footer__column footer__column--subscribe">
-                        <span class="footer__title title">newsletter</span>
-                        <span class="footer__text">
-                            <p >
-                                Subscribe by our newsletter and get
-                                update protidin.
-                            </p>
+            <ul class="footer__columns">
+                <li class="footer__column">
+                    <a class="logo logo--footer" href="#body" title="go to main page">
+                        <img src="images/logo.svg" alt="logo">
+                    </a>
+                    <address class="footer__address">
+                        <span class="footer__contacts">
+                            <span class="footer__contacts--upper">address:</span> 
+                            4772 Wines Lane
+                            Houston, TX 77032
                         </span>
-                        <form class="footer__form">
-                            <label class="footer__label">
-                                <input class="footer__email" type="email" name="email" placeholder="Email address" required>
-                            </label>     
-                            <button class="footer__button button" type="submit">Subscribe</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
+                        <a class="footer__contacts" href="tel:+8323475843">
+                            <span class="footer__contacts--upper">Telephone: +832-347-5843</span>
+                        </a>
+                        <a class="footer__contacts" href="mailto:contact@Glee.com">
+                            <span class="footer__contacts--upper">email</span>: contact@Glee.com
+                        </a>
+                    </address>
+                </li>
 
+                <li class="footer__column">
+                    <span class="footer__title title">services</span>
+                    <ul>
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">About us</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Return Policy</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Our Blog</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Contact Us</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="footer__column">
+                    <span class="footer__title title">account</span>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Your Account</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Checkout</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Login</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a class="footer__link link" href="#">Register</a>
+                        </li>
+                    </ul>
+                </li>
+                    
+                <li class="footer__column">
+                    <span class="footer__title title">newsletter</span>
+                    <span class="footer__text">
+                        <p>
+                            Subscribe by our newsletter and get
+                            update protidin.
+                        </p>
+                    </span>
+                    <form class="form">
+                        <label class="form__label">
+                            <input class="form__email" type="email" name="email" placeholder="Email address" required>
+                        </label>     
+                        <button class="form__button button" type="submit">Subscribe</button>
+                    </form>
+                </li>
+            </ul>
+          
             <div class="footer__bottom">
-                <p class="footer__rights">
+                <p>
                     ©2020 CopyRight Example. All rights reserved.
                 </p>
-                <ul class="footer__menu">
 
-                    <li class="footer__item-bottom">
-                        <a class="footer__link link" href="#body">Home</a>
-                    </li>
-
-                    <li class="footer__item-bottom">
-                        <a class="footer__link link" href="#">About</a>
-                    </li>
-
-                    <li class="footer__item-bottom">
-                        <a class="footer__link link" href="#">Blog</a>
-                    </li>
-
-                    <li class="footer__item-bottom">
-                        <a class="footer__link link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <nav class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link menu__link link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link menu__link link" href="#">About</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link menu__link link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link menu__link link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>

@@ -23,7 +23,7 @@ $(function() {
      });
 
     $(window).on('scroll', function() {
-        $('.menu').toggleClass('menu--active', $(this).scrollTop() > 0);
+        $('.header__menu').toggleClass('header__menu--active', $(this).scrollTop() > 0);
     });
 
     var cardsContainerFisrt = document.querySelector('[data-ref="filter__first"]');

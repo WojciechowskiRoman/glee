@@ -11,6 +11,28 @@
         width: 54px;
         height: 52px;
 
+        &:first-child, &:last-child {
+            .userbar__button {
+                background-color: $sky-blue;
+                
+                &:hover {
+                    background-color: $dark-blue;
+                    fill: $sky-blue;
+                }
+        
+                &:focus, &:active {
+                    background-color: $dark-blue;
+                    fill: $accent;
+                }
+            }
+        }
+        
+        &:first-child {
+            .userbar__button {
+                background-color: rgba($sky-blue, 0.2);
+            }
+        }
+
         &:nth-child(2) {
             margin-right: 18px;
 
@@ -29,26 +51,11 @@
         &:nth-child(3) {
             margin-right: 39px;
         }
-    }
+    } 
 
     &__button {
         width: 52px;
         height: 51px;
-        background-color: rgba($sky-blue, 0.2);
-
-        &--menu {
-            background-color: $sky-blue;
-        }
-
-        &:hover {
-            background-color: $dark-blue;
-            fill: $sky-blue;
-        }
-
-        &:focus, &:active {
-            background-color: $dark-blue;
-            fill: $accent;
-        }
     }
 
     &__link {
@@ -61,18 +68,12 @@
 
         &:hover {
             background-color: #f8c08f;
-            
-            svg {
-                fill: #fff;
-            }
+            fill: #fff;
         }
     
         &:focus, &:active {
             background-color: #f8c08f;
-            
-            svg {
-                fill: $sky-blue;
-            }
+            fill: $sky-blue;
         }
 
         &--like {

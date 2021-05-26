@@ -1,10 +1,5 @@
 .product {
 
-    margin-bottom: 162px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
     &__card {
         margin: 0 10px 30px 0;
         position: relative;
@@ -28,9 +23,9 @@
     }
 
     &__img {
+        padding: 50px 15px 0;
         position: relative;
         display: block;
-        padding-top: 50px;
         transition: transform 0.5s;
     }
 
@@ -61,7 +56,8 @@
 
     &__menu-item {
         transition: all 0.5s;
-        svg {
+
+        .product__menu-icon {
             fill: $sky-blue;
             margin: auto;
         }
@@ -85,7 +81,8 @@
         }
 
         &:hover, &:focus {
-            svg {
+
+            .product__menu-icon {
                 fill: #fff;
             }
         }
@@ -93,7 +90,7 @@
         &:focus, &:active {
             background-color: $accent;
 
-            svg {
+            .product__menu-icon {
                 fill: $dark-blue;
             }
         }

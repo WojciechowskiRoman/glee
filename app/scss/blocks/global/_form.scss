@@ -1,0 +1,58 @@
+.form {
+
+    &__label {
+        padding: 12px 0;
+        transition: box-shadow 0.5s;
+        
+        &:hover {
+            box-shadow: 0 0 15px $sky-blue;
+        }
+
+        &:focus, &:active {
+            box-shadow: 0 0 15px $accent;
+        }
+    }
+
+    &__email {
+        padding: 16px 12px;
+        margin-right: -3px;
+        width: 170px;
+        height: 38px;
+        background-color: $accent;
+        background-color: rgba(252,215,182,0.2);
+        border: none;
+        outline: transparent;
+        &::placeholder {
+            color: #234969;
+        }
+    }
+
+    &__button {
+        padding: 12px 0;
+        width: 100px;
+        color: #fff;
+        background-color: $sky-blue;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 100%;
+            background-color: $dark-blue;
+            z-index: -1;
+            transition: color 0.5s, background-color 0.5s, top 0.5s;
+        }
+
+        &:hover:before {
+            top: 0;
+            color: $sky-blue;
+        }
+
+        &:active, &:focus {
+            background-color: $dark-blue;
+            color: $accent;
+        }
+    }
+}

@@ -3,24 +3,22 @@
     &__list {
         display: flex;
         justify-content: space-around;
-        align-items: center;
         flex-wrap: wrap;
     }
 
     &__product {
-        margin-bottom: 5.4%;
+        padding: 4% 0 4% 21%;
+        margin-bottom: 5.6%;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 21%;
         max-width: 870px;
         width: 100%;
-        min-height: 390px;
         background-color: rgba($accent, 0.4);
 
         &:nth-child(2) {
-            padding-left: 24%;
+            padding: 4% 0 4% 24%;
         }
     }
 
@@ -52,11 +50,8 @@
         max-width: 180px;
         border: solid 1px $grey-blue;
         border-radius: 5px;
-        color: $dark-blue;
-        
-        svg {
-            fill: $dark-blue;
-        }
+        color: $grey-blue;
+        fill: $dark-blue;
     }
 
     &:nth-child(2) .offer__content{

@@ -4,4 +4,12 @@
     left: 0;
     right: 0;
     background-color: #fff;
+
+    &__menu {
+        padding: 43px 0;
+        
+        &--active {
+            padding: 23px 0;
+        }
+    }
 }

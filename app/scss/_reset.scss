@@ -32,7 +32,7 @@ html {
     margin: 0;
   }
   
-  ul[class] {
+  ul {
     list-style: none;
   }
   
@@ -43,6 +43,16 @@ html {
   
   a {
     text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  address {
+    font-style: normal;
   }
   
   input,

@@ -4,12 +4,11 @@
     justify-content: space-between;
 
     &__item {
+        padding: 40px 0 40px 71px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         flex: 0 1 33.333%;
-        min-height: 171px;
         background-color: rgba($accent, 0.2);
         border-right: 1px solid rgba($dark-blue, 0.1);
         transition: background-color 0.5s;
@@ -20,9 +19,7 @@
         }
 
         &:nth-child(2) {
-            .features__text {
-                margin-bottom: 15px;
-            }
+            padding: 50px 0 40px 71px;
         }
     }
 
