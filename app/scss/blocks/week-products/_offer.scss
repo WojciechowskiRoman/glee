@@ -1,14 +1,12 @@
 .offer {
 
-    &__list {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+    margin-top: 162px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     &__product {
         padding: 4% 0 4% 21%;
-        margin-bottom: 5.6%;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -18,7 +16,7 @@
         background-color: rgba($accent, 0.4);
 
         &:nth-child(2) {
-            padding: 4% 0 4% 24%;
+            padding: 4.5% 0 4% 24%;
         }
     }
 

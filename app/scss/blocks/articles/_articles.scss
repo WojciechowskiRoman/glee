@@ -1,0 +1,51 @@
+.articles {
+
+    padding-top: 54px;
+    position: relative;
+
+    &__title {
+        margin-bottom: 3.8%;
+        display: inline-block;
+    }
+
+    &__link-more {
+        padding: 18px 25px;
+        float: right;
+        position: relative;
+        font-size: 16px;
+        font-family: 'DMSans' , sans-serif;
+        font-weight: 700;
+        color: $dark;
+        transition: color 0.3s;
+
+        &::after {
+            position: absolute;
+            content: '>';
+            right: 0;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus, &:active {
+            color: $sky-blue;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: rgba($accent, 0.2);
+        max-height: 174px;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+    }
+}

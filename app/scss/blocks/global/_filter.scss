@@ -1,10 +1,9 @@
 .filter {
 
-    &__product, &__novelty {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+    margin: 1% 0 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__product {
         margin-bottom: 162px;

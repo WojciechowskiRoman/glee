@@ -1,5 +1,4 @@
 .features {
-    margin-bottom: 64px;
     display: flex;
     justify-content: space-between;
 
@@ -36,7 +35,7 @@
             position: absolute;
             content: '';
             left: -73px;
-            top: 10px;
+            top: 5px;
         }
 
         &--support::before {
