@@ -1,3 +1,7 @@
 .products {
-    padding: 67px 0 46px;
+    padding-top: 3.5%;
+
+    @media(max-width: $small-phone) {
+        padding-top: 7%;
+    }
 }

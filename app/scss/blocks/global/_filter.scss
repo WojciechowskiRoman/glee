@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     &__product {
         margin-bottom: 162px;
@@ -29,6 +30,10 @@
     &__button {
         padding: 15px 0;
         font-weight: 700;
+
+        @media(max-width: $small-phone) {
+            padding: 9px 0;
+        }
 
         &:hover {
             color: #1a1a1a;

@@ -1,7 +1,7 @@
 .banner {
 
     &__slider {
-        max-height: 76vh;
+        max-height: 83vh;
     }
 
     &__item {
@@ -13,12 +13,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 76vh;
+        min-height: 77vh;
+
+        @media(max-width: $medium) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__content {
         max-width: 450px;
-        margin-bottom: 64px;
+        margin-bottom: 55px;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 0;
+        }
+
+        @media(max-width: $medium) {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__title {
@@ -30,6 +47,19 @@
         line-height: 1;
         text-transform: uppercase;
         color: $dark-blue;
+
+        @media(max-width: $large) {
+            margin-top: 10px;
+            font-size: 66px;
+        }
+
+        @media(max-width: $tablet) {
+            font-size: 40px;
+        }
+
+        @media(max-width: $small-phone) {
+            font-size: 26px;
+        }
     }
 
     &__text {
@@ -39,18 +69,38 @@
         font-size: 18px;
         line-height: 1.67;
         color: $grey-blue;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 26px;
+            max-width: 543px;
+        }
+
+        @media(max-width: $small-phone) {
+            font-size: 18px;
+            text-align: center;
+        }
     }
 
     &__link {
         padding: 21px 100px 21px 27px;
         max-width: 200px;
         background-color: $sky-blue;
+
+        @media(max-width: $tablet) {
+            padding: 15px 42px 15px 27px;
+            max-width: 170px;
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 13px 42px 13px 27px;
+            max-width: 143px;
+        }
     }
 
     &__img {
         position: relative;
         z-index: 1;
-
+        
         &:after {
             content: '';
             position: absolute;
@@ -60,11 +110,19 @@
             border-radius: 50%;
             max-width: 640px;
             width: 100%;
-            height: 59vmin;
+            height: 57vmin;
             background-image: linear-gradient(-90.0deg, #fff 0%, rgba(255,255,255,0.0) 100%);
             background-position: center;
             background-repeat: no-repeat;
             z-index: -1;
+
+            @media(max-width: $large) {
+                display: none;
+            }
+        }
+
+        @media(max-width: $medium) {
+            max-width: 72vh;
         }
     }
 }
@@ -91,6 +149,16 @@
         &:hover {
             opacity: 1;
         }
+
+        @media(max-width: $tablet) {
+            font-size: 0;
+            width: 17px;
+            height: 16px;
+        }
+    }
+
+    @media(max-width: $small-phone) {
+        left: 35%;
     }
 }
 

@@ -33,6 +33,10 @@
         font-weight: 500;
         line-height: 2.5;
         color: $dark-blue;
+
+        @media(max-width: $small-phone) {
+            padding-top: 25px;
+        }
     }
 
     &__cost {

@@ -3,10 +3,14 @@
     background-color: rgba($accent, 0.2);
 
     &__list {
-        padding: 95px 0 80px;
+        padding: 5% 0 7%;
     }
 
     &__img {
         margin: 0 auto;
+    }
+
+    @media(max-width: $small-phone) {
+        display: none;
     }
 }

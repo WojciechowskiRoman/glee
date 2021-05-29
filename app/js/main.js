@@ -6,13 +6,28 @@ $(function() {
         return false;
     });
 
+    $('.header__burger, .header__menu-list, .userbar' ).on('click', function() {
+        $('.header__burger').toggleClass('header__burger--active');
+        $('.header__menu-list').toggleClass('header__menu-list--active');
+        $('.userbar').toggleClass('userbar--active');
+        $('body').toggleClass('lock');
+    });
+
     $('.banner__slider').slick({
        arrows: false,
        dots: true,
        swipe: false,
        adaptiveHeight: true,
-       autoplay: true,
-       autoplaySpeed: 3000
+       responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            swipe: true,
+          }
+        }
+    ]
+    //    autoplay: true,
+    //    autoplaySpeed: 3000
     });
 
     $('.partners__list').slick({

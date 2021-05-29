@@ -11,9 +11,19 @@
 
     &__item:not(:last-child) {
         margin-right: 35px;
+
+        @media(max-width: $tablet) {
+            margin-right: 0;
+        }
     }
 
     &__link {
         padding: 13px 0;
+        @media(max-width: $tablet) {
+            display: block;
+            font-size: 26px;
+            padding: 20px 0;
+        }
     }
+
 }

@@ -1,6 +1,6 @@
 .novelty {
 
-    padding: 46px 0 55px;
+    padding: 2.7% 0 3.2%;
 
     &__filter {
         margin: 0 0 5%;
@@ -17,7 +17,7 @@
     &__video {
         position: relative;
         display: block;
-        min-height: 500px;
+        min-height: 46vh;
         background-image: url('../images/video/video.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -35,5 +35,17 @@
         right: 46.7%;
         top: 37%;
         transition: transform 0.5s;
+
+        @media(max-width: $tablet) {
+            right: 40%;
+            top: 30%;
+        }
+
+        @media(max-width: $medium) {
+            right: 34.7%;
+            top: 29%;
+            width: 100px;
+            height: 100px;
+        }
     }
 }

@@ -11,5 +11,108 @@
         &--active {
             padding: 23px 0;
         }
+
+        @media(max-width: $small-phone) {
+            padding: 22px 0;
+        }
+    }
+
+    &__menu-list {
+
+        @media(max-width: $tablet) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            overflow: auto;
+            width: 100%;
+            background-color: #fff;
+            transform: translateY(-200%);
+            transition: transform 0.5s;
+
+            &--active {
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: $small-phone) {
+            padding: 20% 0;
+        }
+    }
+
+    &__burger {
+        display: none;
+        position: absolute;
+        top: 34%;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        border: 1px solid #000;
+        z-index: 2;
+
+        span {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 23%;
+            right: 0;
+            width: 50%;
+            border: 1px solid #000;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                left: 4%;
+                width: 100%;
+                border: 1px solid #000;
+                transition: all 0.5s;
+            }
+
+            &::before {            
+                bottom: 10px;
+            }
+    
+            &::after {
+                top: 10px;
+            }
+        }
+
+        &:active, &:focus {
+            outline: transparent;
+        }
+
+        @media(max-width: $tablet) {
+            display: block;
+
+            &--active {
+                z-index: 3;
+
+                span {
+                    visibility: hidden;
+
+                    &::before, &::after {
+                        visibility: visible;
+                    }
+
+                    &::before {
+                        bottom: 0;
+                        transform: rotate(-45deg);
+                    }
+    
+                    &::after {
+                        top: -2px;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            top: 27%;
+        }
     }
 }

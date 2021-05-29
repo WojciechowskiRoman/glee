@@ -1,10 +1,15 @@
 .logo {
     padding: 5px 0;
     width: 17%;
+    z-index: 3;
 
     &--footer {
         padding-bottom: 24px;
         display: block;
         width: 100%;
+    }
+
+    @media(max-width: $tablet) {
+        width: 50%
     }
 }

@@ -60,10 +60,14 @@
         position: absolute;
         object-fit: cover;
         min-height: 8vh;
-        max-height: 16vh;
+        max-height: 30vh;
         right: 15%;
         top: 37%;
         margin-top: -8%;
         margin-bottom: -4%;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 350px;
     }
 }

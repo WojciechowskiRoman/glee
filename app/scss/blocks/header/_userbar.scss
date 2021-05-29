@@ -10,27 +10,14 @@
         position: relative;
         width: 54px;
         height: 52px;
+        border-radius: 50%;
 
-        &:first-child, &:last-child {
-            .userbar__button {
-                background-color: $sky-blue;
-                
-                &:hover {
-                    background-color: $dark-blue;
-                    fill: $sky-blue;
-                }
-        
-                &:focus, &:active {
-                    background-color: $dark-blue;
-                    fill: $accent;
-                }
-            }
+        &:nth-child(1) {
+            background-color: rgba($sky-blue, 0.2);
         }
-        
-        &:first-child {
-            .userbar__button {
-                background-color: rgba($sky-blue, 0.2);
-            }
+
+        &:nth-child(4) {
+            background-color: $sky-blue;
         }
 
         &:nth-child(2) {
@@ -56,6 +43,16 @@
     &__button {
         width: 52px;
         height: 51px;
+  
+        &:hover {
+            background-color: $dark-blue;
+            fill: $sky-blue;
+        }
+
+        &:focus, &:active {
+            background-color: $dark-blue;
+            fill: $accent;
+        }
     }
 
     &__link {
@@ -104,5 +101,22 @@
         border-radius: 50%;
         font-weight: 400;
         background-color: #fff
+    }
+
+    @media(max-width: $tablet) {
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translateY(-200px);
+        transition: transform 0.5s;
+
+        &--active {
+            transform: translateY(0);
+        }
+    }
+
+    @media(max-width: 768px) {
+        display: none;
     }
 }

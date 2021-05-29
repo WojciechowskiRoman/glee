@@ -13,8 +13,12 @@ body {
 }
 
 main {
-    margin-top: 7.5%;
+    margin-top: 135px;
     flex-grow: 1;
+
+    @media(max-width: $small-phone) {
+        margin-top: 93px;
+    }
 }
 
 a {
@@ -55,6 +59,11 @@ address {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
+
+    @media(max-width: $small-phone) {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 }
 
 .link-button {
@@ -89,7 +98,7 @@ address {
     }
 }
 
-.link {
+.link-hover {
     position: relative;
 
     &:after {
@@ -123,6 +132,18 @@ address {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media(max-width: $tablet) {
+        justify-content: space-around;
+    }
+
+    @media(max-width: $small-phone) {
+        justify-content: center;
+    }
+}
+
+.lock {
+    overflow: hidden;
 }
 
 .sr-only {

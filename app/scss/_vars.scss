@@ -12,6 +12,14 @@ $dark-grey: #414141;
 
 $dark: #262626;
 
+$small-phone: 576px;
+
+$medium: 768px;
+
+$tablet: 1024px;
+
+$large: 1400px;
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }

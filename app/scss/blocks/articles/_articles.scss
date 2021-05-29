@@ -6,16 +6,22 @@
     &__title {
         margin-bottom: 3.8%;
         display: inline-block;
+
+        @media(max-width: $small-phone) {
+            max-width: 179px;
+        }
     }
 
     &__link-more {
-        padding: 18px 25px;
+        padding: 7px 25px;
         float: right;
         position: relative;
         font-size: 16px;
         font-family: 'DMSans' , sans-serif;
         font-weight: 700;
-        color: $dark;
+        color: #262626;
+        -webkit-transition: color 0.3s;
+        -o-transition: color 0.3s;
         transition: color 0.3s;
 
         &::after {
@@ -31,12 +37,20 @@
         &:focus, &:active {
             color: $sky-blue;
         }
+
+        @media(max-width: $small-phone) {
+            padding: 23px 25px;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media(max-width: $medium) {
+            justify-content: center;
+        }
     }
 
     &::before {
