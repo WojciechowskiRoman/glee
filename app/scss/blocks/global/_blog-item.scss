@@ -1,5 +1,5 @@
 .blog-item {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -10,29 +10,12 @@
     transition: box-shadow 0.5s, background-color 0.5s;
     color: $dark;
 
-    &:not(:last-child) {
-        margin-right: 10px;
-    }
-
     &:hover {
         box-shadow: 0 0 35px $sky-blue;
-
-        .blog-item__type {
-            background-color: $accent;
-            color: $dark;
-        }
-
-        .blog-item__subtitle, .blog-item__author {
-            color: $grey-blue;
-        }
     }
 
     &:active, &:focus {
         background-color: $sky-blue;
-
-        .blog-item__subtitle, .blog-item__author {
-            color: $accent;
-        }
     }
 
     &__img {
@@ -49,10 +32,15 @@
         border-radius: 20px;
         background-color: $sky-blue;
         transition: color 0.5s, background-color 0.5s;
+
+        &:hover {
+            background-color: $accent;
+            color: $dark;
+        }
     }
 
     &__summary {
-        padding: 33px 27px 0 27px;
+        padding: 33px 27px 27px 27px;
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
@@ -71,10 +59,18 @@
         font-size: 18px;
         color: $dark;
         transition: color 0.3s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:active, &:focus {
+            color: $accent;
+        }
     }
 
     &__info {
-        padding: 22px 0 27px 0;
+        padding-top: 22px;
         display: flex;
         justify-content: space-around;
         color: #222933;
@@ -82,6 +78,11 @@
         font-size: 12px;
         border-top: 1px solid #e0e0e0;
         text-transform: uppercase;
+
+        @media(max-width: $medium) {
+            padding-left: 20px;
+            justify-content: space-between;
+        }
     }
 
     &__posted {
@@ -115,6 +116,24 @@
         &::before {
             background-image: url(../images/blog/author.svg);
             background-size: 18px;
+        }
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:active, &:focus {
+            background-color: $sky-blue;
+            color: $accent;
+        }
+
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+
+        @media(max-width: $small-phone) {
+            margin-right: 0;
         }
     }
 

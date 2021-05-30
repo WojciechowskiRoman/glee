@@ -12,12 +12,10 @@
         height: 52px;
         border-radius: 50%;
 
-        &:nth-child(1) {
-            background-color: rgba($sky-blue, 0.2);
-        }
-
-        &:nth-child(4) {
-            background-color: $sky-blue;
+        &:nth-child(1){
+            .userbar__button {
+                background-color: rgba($sky-blue, 0.2);
+            }
         }
 
         &:nth-child(2) {
@@ -38,20 +36,30 @@
         &:nth-child(3) {
             margin-right: 39px;
         }
-    } 
 
-    &__button {
-        width: 52px;
-        height: 51px;
-  
-        &:hover {
+        &:nth-child(4){
+            .userbar__button {
+                background-color: $sky-blue;
+            }
+        }
+
+        .userbar__button:hover {
             background-color: $dark-blue;
             fill: $sky-blue;
         }
 
-        &:focus, &:active {
+        .userbar__button:focus, &:active {
             background-color: $dark-blue;
             fill: $accent;
+        }
+    } 
+
+    &__button {
+        width: 54px;
+        height: 52px;
+
+        .userbar__icon {
+            transform: translateY(9%);
         }
     }
 

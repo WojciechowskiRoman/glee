@@ -7,6 +7,10 @@
 
     &__list {
         display: flex;
+
+        @media(max-width: $tablet) {
+            display: block;
+        }
     }
 
     &__item:not(:last-child) {
@@ -19,10 +23,15 @@
 
     &__link {
         padding: 13px 0;
+
         @media(max-width: $tablet) {
             display: block;
             font-size: 26px;
             padding: 20px 0;
+        }
+
+        @media(max-width: $small-phone) {
+            font-size: 24px;
         }
     }
 

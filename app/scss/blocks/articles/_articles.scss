@@ -7,8 +7,12 @@
         margin-bottom: 3.8%;
         display: inline-block;
 
+        @media(max-width: $medium) {
+            margin-bottom: 8%;
+        }
+
         @media(max-width: $small-phone) {
-            max-width: 179px;
+            margin-bottom: 0;
         }
     }
 
@@ -20,8 +24,6 @@
         font-family: 'DMSans' , sans-serif;
         font-weight: 700;
         color: #262626;
-        -webkit-transition: color 0.3s;
-        -o-transition: color 0.3s;
         transition: color 0.3s;
 
         &::after {
@@ -39,7 +41,11 @@
         }
 
         @media(max-width: $small-phone) {
-            padding: 23px 25px;
+            padding: 18px 25px 25px;
+            margin-right: 0;
+            display: block;
+            text-align: right;
+            float: none;
         }
     }
 
@@ -57,9 +63,17 @@
         content: '';
         position: absolute;
         background-color: rgba($accent, 0.2);
-        max-height: 174px;
+        max-height: 212px;
         height: 100%;
         width: 100%;
         bottom: 0;
+
+        @media(max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    @media(max-width: $small-phone) {
+        padding-top: 16%;
     }
 }

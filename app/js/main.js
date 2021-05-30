@@ -1,5 +1,19 @@
 $(function() {
 
+    $(".filter-price__input").ionRangeSlider({
+        type: "double",
+
+        onStart: function (data) {
+            $('.filter-price__from').text("$" + data.from);
+            $('.filter-price__to').text("$" + data.to);
+          },
+        onChange: function (data) {
+            $('.filter-price__from').text("$" + data.from);
+            $('.filter-price__to').text("$" + data.to);
+        },
+
+    });
+
     $("a[href^='#']").click(function(){
         var _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
@@ -18,6 +32,9 @@ $(function() {
        dots: true,
        swipe: false,
        adaptiveHeight: true,
+       autoplay: true,
+       autoplaySpeed: 3000,
+       fade: true,
        responsive: [
         {
           breakpoint: 1024,
@@ -25,9 +42,7 @@ $(function() {
             swipe: true,
           }
         }
-    ]
-    //    autoplay: true,
-    //    autoplaySpeed: 3000
+    ],
     });
 
     $('.partners__list').slick({
@@ -35,14 +50,29 @@ $(function() {
         dots: false,
         slidesToShow: 5,
         centerPadding: '40px',
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                }
+              }
+            
+        ],
      });
 
     $(window).on('scroll', function() {
         $('.header__menu').toggleClass('header__menu--active', $(this).scrollTop() > 0);
     });
 
-    var cardsContainerFisrt = document.querySelector('[data-ref="filter__first"]');
-    var cardsContainerSecond = document.querySelector('[data-ref="filter__second"]');
+    var cardsContainerFisrt = document.querySelector('[data-ref="mix-first"]');
+    var cardsContainerSecond = document.querySelector('[data-ref="mix-second"]');
 
     var config = {
         controls: {

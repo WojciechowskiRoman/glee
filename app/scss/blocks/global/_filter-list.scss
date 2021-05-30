@@ -1,6 +1,6 @@
-.filter {
+.filter-list {
 
-    margin: 1% 0 2.5%;
+    margin: 12px 0 27px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,5 +42,9 @@
         &:active, &:focus {
             color: $accent;
         }
+    }
+    
+    @media(max-width: $small-phone) {
+        margin: 20px 0 27px;
     }
 }

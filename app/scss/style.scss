@@ -4,17 +4,17 @@
 @import 'libs';
 @import 'global';
 
-
 @import 'blocks/header/header';
 @import 'blocks/global/logo';
 @import 'blocks/header/menu';
 @import 'blocks/header/userbar';
+@import 'blocks/top/top';
 @import 'blocks/banner/banner';
 @import 'blocks/banner/features';
 @import 'blocks/products/products';
 @import 'blocks/week-products/offer';
 @import 'blocks/global/product';
-@import 'blocks/global/filter';
+@import 'blocks/global/filter-list';
 @import 'blocks/novelty/novelty';
 @import 'blocks/global/novelty-card';
 @import 'blocks/articles/articles';
@@ -22,3 +22,4 @@
 @import 'blocks/partners/partners';
 @import 'blocks/footer/footer';
 @import 'blocks/global/form';
+@import 'blocks/shop/shop';

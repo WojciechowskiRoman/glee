@@ -1,7 +1,25 @@
 .products {
     padding-top: 3.5%;
 
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        @media(max-width: $large) {
+            justify-content: space-around;
+        }
+    
+        @media(max-width: $small-phone) {
+            justify-content: center;
+        }
+    }
+
+    @media(max-width: $tablet) {
+        padding-top: 8%;
+    }
+
     @media(max-width: $small-phone) {
-        padding-top: 7%;
+        padding-top: 16%;
     }
 }

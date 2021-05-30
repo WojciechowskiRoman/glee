@@ -12,8 +12,8 @@
 
         .novelty-card__img {
             position: absolute;
-            right: -22%;
-            top: 53%;
+            left: 126px;
+            top: 92px;
         }
     }
 
@@ -47,6 +47,10 @@
         font-weight: 700;
         color: #1a1a1a;
         z-index: 2;
+
+        @media(max-width: $small-phone) {
+            font-size: 19px;
+        }
     }
 
     &__type {
@@ -58,16 +62,23 @@
 
     &__img {
         position: absolute;
-        object-fit: cover;
-        min-height: 8vh;
-        max-height: 30vh;
+        object-fit: contain;
+        height: 163px;
         right: 15%;
         top: 37%;
         margin-top: -8%;
         margin-bottom: -4%;
     }
 
+    @media(max-width: $large) {
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.15);
+    }
+
     @media(max-width: $tablet) {
         max-width: 350px;
+    }
+
+    @media(max-width: $small-phone) {
+        margin: 0 0px 34px 0;
     }
 }

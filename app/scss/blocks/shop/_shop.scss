@@ -1,0 +1,115 @@
+.shop {
+    padding: 118px 0;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__filters {
+        margin-right: 27px;
+        max-width: 270px;
+        width: 100%;
+    }
+}
+
+.shop-content {
+    width: 100%;
+}
+
+.filter {
+    &__title {
+        margin-bottom: 25px;
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        color: $dark-blue;
+        text-align: left;
+        text-transform: uppercase;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 50%;
+            right: -54px;
+            height: 3px;
+            width: 39px;
+            background-color: $sky-blue;
+        }
+    }
+
+    &__item {
+        margin-bottom: 60px;
+    }
+
+    &__label {
+        display: block;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.filter-type {
+
+    &__input {
+        &:checked + .filter-type__checkbox {
+            background-color: rgba($sky-blue, 0.2);
+            border-radius: 5px;
+        }
+    }
+
+    &__checkbox {
+        padding: 15px 22px 14px 14px;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Rubik', sans-serif;
+        color: $dark-blue;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba($sky-blue, 0.1);
+        }
+    }
+}
+
+.filter-price {
+
+    &__label {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.irs--flat .irs-line {
+    top: 10px;
+    height: 3px;
+    background-color: rgba($sky-blue, 0.66);
+    border-radius: 4px;
+}
+
+.irs-max, .irs-min {
+    display: none;
+}
+
+.irs--flat .irs-bar {
+    top: 10px;
+    height: 4px;
+    background-color: $sky-blue;
+}
+
+.irs-from, .irs-to, .irs-single {
+    display: none;
+}
+
+.irs--flat .irs-handle {
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: $sky-blue;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}

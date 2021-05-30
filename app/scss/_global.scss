@@ -13,11 +13,19 @@ body {
 }
 
 main {
-    margin-top: 135px;
+    margin-top: 143px;
     flex-grow: 1;
 
+    @media(max-width: $tablet) {
+        margin-top: 135px;
+    }
+
+    @media(max-width: $medium) {
+        margin-top: 109px;
+    }
+
     @media(max-width: $small-phone) {
-        margin-top: 93px;
+        margin-top: 79px;
     }
 }
 
@@ -125,20 +133,6 @@ address {
 
     &--round {
         border-radius: 50%;
-    }
-}
-
-.products-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    @media(max-width: $tablet) {
-        justify-content: space-around;
-    }
-
-    @media(max-width: $small-phone) {
-        justify-content: center;
     }
 }
 

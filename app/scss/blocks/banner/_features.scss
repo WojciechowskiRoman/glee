@@ -7,10 +7,6 @@
         align-items: center;
     }
 
-    @media(max-width: $medium) {
-        display: none;
-    }
-
     &__item {
         padding: 40px 0 40px 71px;
         display: flex;
@@ -27,8 +23,16 @@
         }
 
         @media(max-width: $tablet) {
-            padding: 3%;
+            padding: 40px;
             width: 100%;
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 40px 17px 0 77px;
+
+            &:last-child {
+                padding: 40px 17px 20px 77px;
+            }
         }
     }
 
@@ -58,7 +62,11 @@
     
         &--payment::before {
             content: url('../images/features/payment.svg');
-        }      
+        }   
+        
+        @media(max-width: $medium) {
+            font-size: 17px;
+        }
     }
 
     &__text {

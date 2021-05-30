@@ -12,8 +12,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 870px;
-        width: 100%;
+        flex: 0 1 49%;
         background-color: rgba($accent, 0.4);
 
         &:nth-child(2) {
@@ -27,7 +26,21 @@
         }
 
         @media(max-width: $tablet) {
-            max-width: 700px;
+            margin-bottom: 0;
+            align-items: center;
+            flex: 0 1 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 70px;
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 4% 0 8%;
+
+            &:nth-child(2) {
+                padding: 4% 0 8%;
+            }
         }
     }
 
@@ -41,10 +54,19 @@
             left: 5vw;
         }
 
+        @media(max-width: $tablet) {
+            left: 16vw;
+            max-width: 16vw;
+        }
+
         @media(max-width: $medium) {
             left: 0;
-            bottom: 13vh;
             max-width: 18vw;
+        }
+
+        @media(max-width: $small-phone) {
+            max-width: 26vw;
+            position: relative;
         }
     }
 
@@ -56,8 +78,13 @@
         font-size: 26px;
         line-height: 1.23;
 
+        @media(max-width: $tablet) {
+            max-width: 354px;
+            text-align: center;
+        }
+
         @media(max-width: $small-phone) {
-            font-size: 21px;
+            font-size: 18px;
         }
     }
 
@@ -67,6 +94,10 @@
         width: 100%;
         line-height: 1.9;
 
+        @media(max-width: $tablet) {
+            text-align: center;
+        }
+
         @media(max-width: $small-phone) {
             line-height: 1.6;
         }
@@ -75,8 +106,10 @@
     &__link {
         padding: 24px 0 25px 20px;
         max-width: 180px;
+        width: 100%;
         border: solid 1px $grey-blue;
         border-radius: 5px;
+        text-align: left;
         color: $grey-blue;
         fill: $dark-blue;
 
