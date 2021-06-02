@@ -2,15 +2,6 @@
 
     &__label {
         padding: 12px 0;
-        transition: box-shadow 0.5s;
-        
-        &:hover {
-            box-shadow: 0 0 15px $sky-blue;
-        }
-
-        &:focus, &:active {
-            box-shadow: 0 0 15px $accent;
-        }
     }
 
     &__email {
@@ -19,9 +10,19 @@
         width: 170px;
         height: 38px;
         background-color: $accent;
-        background-color: rgba(252,215,182,0.2);
+        background-color: rgba(252,215,182, 0.2);
         border: none;
         outline: transparent;
+        transition: box-shadow 0.5s;
+
+        &:hover {
+            box-shadow: 0 0 15px $sky-blue;
+        }
+
+        &:focus {
+            box-shadow: 0 0 15px $accent;
+        }
+
         &::placeholder {
             color: #234969;
         }
@@ -50,9 +51,13 @@
             color: $sky-blue;
         }
 
-        &:active, &:focus {
+        &:focus {
             background-color: $dark-blue;
             color: $accent;
+        }
+
+        &:active {
+            color: $sky-blue;
         }
     }
 }

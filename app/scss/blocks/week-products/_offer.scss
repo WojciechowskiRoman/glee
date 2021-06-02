@@ -1,9 +1,13 @@
 .offer {
 
-    margin-top: 9%;
+    margin-top: 162px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    @media(max-width: $tablet) {
+        margin-top: 110px;
+    }
 
     &__product {
         padding: 4% 0 4% 21%;
@@ -31,7 +35,16 @@
             flex: 0 1 100%;
 
             &:not(:last-child) {
-                margin-bottom: 70px;
+                margin-bottom: 90px;
+            }
+        }
+
+        @media(max-width: $medium) {
+            padding: 4% 1% 4% 1%;
+
+
+            &:nth-child(2) {
+                padding: 4% 1% 4% 1%;
             }
         }
 
@@ -60,13 +73,13 @@
         }
 
         @media(max-width: $medium) {
+            position: relative;
             left: 0;
             max-width: 18vw;
         }
 
         @media(max-width: $small-phone) {
             max-width: 26vw;
-            position: relative;
         }
     }
 
@@ -78,13 +91,17 @@
         font-size: 26px;
         line-height: 1.23;
 
+        @media(max-width: $large) {
+            padding: 0 15px;
+        }
+
         @media(max-width: $tablet) {
             max-width: 354px;
             text-align: center;
         }
 
         @media(max-width: $small-phone) {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
 
@@ -94,12 +111,12 @@
         width: 100%;
         line-height: 1.9;
 
-        @media(max-width: $tablet) {
-            text-align: center;
+        @media(max-width: $large) {
+            padding: 0 15px;
         }
 
-        @media(max-width: $small-phone) {
-            line-height: 1.6;
+        @media(max-width: $tablet) {
+            text-align: center;
         }
     }
 
@@ -119,7 +136,9 @@
         }
     }
 
-    &:nth-child(2) .offer__content{
-        padding-right: 9%;
+    &:nth-child(2) {
+        .offer__content {
+            padding-right: 9%;
+        }
     }
 }

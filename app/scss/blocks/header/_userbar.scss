@@ -10,7 +10,6 @@
         position: relative;
         width: 54px;
         height: 52px;
-        border-radius: 50%;
 
         &:nth-child(1){
             .userbar__button {
@@ -43,20 +42,28 @@
             }
         }
 
-        .userbar__button:hover {
-            background-color: $dark-blue;
-            fill: $sky-blue;
-        }
+        .userbar__button {
 
-        .userbar__button:focus, &:active {
-            background-color: $dark-blue;
-            fill: $accent;
+            &:hover {
+                background-color: $dark-blue;
+                fill: $sky-blue;
+            }
+
+            &:focus {
+                background-color: $dark-blue;
+                fill: $accent;
+            }
+
+            &:active {
+                box-shadow: 0 0 18px 0;
+            }
         }
     } 
 
     &__button {
         width: 54px;
         height: 52px;
+        transition: box-shadow 0.5s, background-color 0.5s, fill 0.5s;
 
         .userbar__icon {
             transform: translateY(9%);
@@ -72,13 +79,16 @@
         transition: all 0.5s;
 
         &:hover {
-            background-color: #f8c08f;
             fill: #fff;
         }
     
-        &:focus, &:active {
+        &:focus {
             background-color: #f8c08f;
             fill: $sky-blue;
+        }
+
+        &:active {
+            background-color: $dark-blue;
         }
 
         &--like {
@@ -124,7 +134,7 @@
         }
     }
 
-    @media(max-width: 768px) {
+    @media(max-width: $medium) {
         display: none;
     }
 }

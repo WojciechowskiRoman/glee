@@ -2,6 +2,7 @@
     padding: 118px 0;
 
     &__inner {
+        position: relative;
         display: flex;
     }
 
@@ -9,11 +10,64 @@
         margin-right: 27px;
         max-width: 270px;
         width: 100%;
+
+        @media(max-width: $tablet) {
+            padding-top: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -14px;
+            right: 0;
+            max-width: 280px;
+            z-index: 11;
+            background-color: white;
+            transform: translateX(-200%);
+            transition: transform 0.5s;
+        }
+
+        &--active {
+            transform: translateX(0);
+        }
     }
 }
 
 .shop-content {
     width: 100%;
+
+    &__top {
+        margin-bottom: 30px;
+        padding: 23px 31px 21px;
+        border: 1px solid rgba($sky-blue, 0.6);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        span {
+            margin-top: -5px;
+        }
+    }
+
+    &__switch {
+        transition: fill 0.3s;
+        &--active {
+            fill: red;
+        }
+    }
+
+    &__filter {
+        display: none;
+        z-index: 10;
+
+        @media(max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .filter {
@@ -35,10 +89,26 @@
             width: 39px;
             background-color: $sky-blue;
         }
+
+        @media(max-width: $tablet) {
+            padding-left: 10px;
+        }
     }
 
     &__item {
         margin-bottom: 60px;
+
+        @media(max-width: $tablet) {
+            padding: 15px 10px 0 15px;
+        }
+
+        @media(max-width: $medium) {
+            margin-bottom: 35px;
+        }
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 20px;
+        }
     }
 
     &__label {
@@ -55,6 +125,10 @@
         &:checked + .filter-type__checkbox {
             background-color: rgba($sky-blue, 0.2);
             border-radius: 5px;
+            
+            .filter-type__count {
+                color: $dark-blue;
+            }
         }
     }
 
@@ -69,7 +143,19 @@
 
         &:hover {
             background-color: rgba($sky-blue, 0.1);
+
+            .filter-type__count {
+                color: $dark-blue;
+            }
         }
+
+        @media(max-width: $small-phone) {
+            padding: 15px 22px 14px 10px;
+        }
+    }
+
+    &__count {
+        color: #b3b3b3;
     }
 }
 
@@ -79,6 +165,12 @@
         padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
+    }
+
+    &__form {
+        @media(max-width: $tablet) {
+            padding: 0 10px;
+        }
     }
 }
 

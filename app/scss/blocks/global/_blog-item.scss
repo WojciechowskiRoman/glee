@@ -1,5 +1,6 @@
 .blog-item {
-    margin-bottom: 40px;
+
+    margin: 0 10px 40px 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -13,29 +14,47 @@
     &:hover {
         box-shadow: 0 0 35px $sky-blue;
     }
+    
+    @media(max-width: $tablet) {
+        max-width: 356px;
+    }
 
-    &:active, &:focus {
-        background-color: $sky-blue;
+    @media(max-width: $small-phone) {
+        margin-right: 0;
+    }
+
+    &__top {
+        position: relative;
     }
 
     &__img {
-        position: relative;
+        margin: 0 auto;
+        max-height: 250px;
     }
 
     &__type {
         padding: 8px 32px;
         position: absolute;
         bottom: -16px;
-        left: 7%;
+        left: 30px;
         font-size: 14px;
         color: #fff;
         border-radius: 20px;
         background-color: $sky-blue;
-        transition: color 0.5s, background-color 0.5s;
+        transition: color 0.5s, background-color 0.5s, transform 0.2s;
 
         &:hover {
+            color: $accent;
+        }
+
+        &:focus{
             background-color: $accent;
             color: $dark;
+            transform: scale(1.1);
+        }
+
+        &:active {
+            box-shadow: 0 0 20px 5px $accent;
         }
     }
 
@@ -48,6 +67,11 @@
 
     &__link {
         flex: 1 1 auto;
+
+        &:focus {
+            box-shadow: 0 0 10px 0 $grey-blue;
+            outline: transparent;
+        }
     }
 
     &__subtitle {
@@ -64,8 +88,8 @@
             color: $accent;
         }
 
-        &:active, &:focus {
-            color: $accent;
+        &:active {
+            color: $light-grey;
         }
     }
 
@@ -122,22 +146,13 @@
             color: $accent;
         }
 
-        &:active, &:focus {
-            background-color: $sky-blue;
-            color: $accent;
+        &:focus {
+            color: $light-grey;
+            outline-color: $light-grey;
         }
 
-    }
-
-    &:not(:last-child) {
-        margin-right: 10px;
-
-        @media(max-width: $small-phone) {
-            margin-right: 0;
+        &:active {
+            color: $dark;
         }
-    }
-
-    @media(max-width: $tablet) {
-        max-width: 356px;
     }
 }

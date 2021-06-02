@@ -24,6 +24,18 @@
     &__link {
         padding: 13px 0;
 
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            color: $sky-blue;
+        }
+
         @media(max-width: $tablet) {
             display: block;
             font-size: 26px;
@@ -34,5 +46,4 @@
             font-size: 24px;
         }
     }
-
 }

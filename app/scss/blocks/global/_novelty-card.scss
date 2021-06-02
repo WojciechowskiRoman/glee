@@ -1,6 +1,7 @@
 .novelty-card {
+
     position: relative;
-    margin: 0 0px 34px 10px;
+    margin: 0 0 34px 10px;
     max-width: 370px;
     width: 100%;
     min-height: 246px;
@@ -8,25 +9,34 @@
     overflow: hidden;
     transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
 
-    &--couch {
-
-        .novelty-card__img {
-            position: absolute;
-            left: 126px;
-            top: 92px;
-        }
-    }
-
     &:hover {
         box-shadow: 0 0 25px $sky-blue;
     }
 
-    &:focus, &:active {
-        background-color: $sky-blue;
-
-        .novelty__type {
+    &:focus {
+        .novelty-card__name {
             color: $accent;
         }
+    }
+
+    &:active {
+        background-color: $sky-blue;
+
+        .novelty-card__type {
+            color: $accent;
+        }
+    }
+
+    @media(max-width: $large) {
+        box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.15);
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 350px;
+    }
+
+    @media(max-width: $small-phone) {
+        margin: 0 0 34px 0;
     }
 
     &__link {
@@ -61,24 +71,12 @@
     }
 
     &__img {
+        padding-left: 80px;
         position: absolute;
         object-fit: contain;
-        height: 163px;
-        right: 15%;
-        top: 37%;
-        margin-top: -8%;
-        margin-bottom: -4%;
-    }
-
-    @media(max-width: $large) {
-        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.15);
-    }
-
-    @media(max-width: $tablet) {
-        max-width: 350px;
-    }
-
-    @media(max-width: $small-phone) {
-        margin: 0 0px 34px 0;
+        height: 150px;
+        width: 100%;
+        bottom: 17px;
+        margin-top: -14px;
     }
 }

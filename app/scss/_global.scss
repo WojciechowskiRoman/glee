@@ -36,10 +36,6 @@ a {
     color: $grey-blue;
     border-radius: 0;
     transition: all 0.5s;
-
-    &:active, &:focus {
-        color: $accent;
-    }
 }
 
 button {
@@ -69,8 +65,8 @@ address {
     font-weight: 700;
 
     @media(max-width: $small-phone) {
-        font-size: 26px;
         margin-bottom: 10px;
+        font-size: 26px;
     }
 }
 
@@ -95,33 +91,24 @@ address {
         }   
     }
 
-    &:active, &:focus {
+    &:focus {
+        color: $accent;
+        background-color: $dark-blue;
+        box-shadow: 0 0 25px $dark-blue;
+        outline-color: transparent;
+
+        .link-button__icon {
+            fill: $accent;
+        }
+    }
+
+    &:active {
         background-color: $sky-blue;
         color: $dark-blue;
-        box-shadow: 0 0 25px $dark-blue;
 
         .link-button__icon {
             fill: $dark-blue;
         }
-    }
-}
-
-.link-hover {
-    position: relative;
-
-    &:after {
-        position: absolute;
-        display: block;
-        content: '';
-        left: 0;
-        height: 4px;
-        width: 0;
-        background-color: $accent;
-        transition: width 0.3s ease-in-out;
-    }
-
-    &:hover::after {
-        width: 100%;
     }
 }
 
@@ -138,6 +125,24 @@ address {
 
 .lock {
     overflow: hidden;
+}
+
+.overflow {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(52, 52, 58, .4);
+
+    &--active {
+
+        @media(max-width: $medium) {
+            display: block;
+        }
+    }
 }
 
 .sr-only {

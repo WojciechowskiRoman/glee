@@ -1,9 +1,17 @@
 .novelty {
 
-    padding: 2.7% 0 3.2%;
+    padding: 54px 0 60px;
+
+    @media(max-width: $tablet) {
+        padding-top: 80px;
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 50px 0 10px;
+    }
 
     &__filter {
-        margin: 13px 0 54px;
+        margin: 8px 0 54px;
 
         @media(max-width: $small-phone) {
             margin: 20px 0 27px;
@@ -11,7 +19,7 @@
     }
 
     &__list {
-        margin-bottom: 7.6%;
+        margin-bottom: 92px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -28,7 +36,7 @@
     &__video {
         position: relative;
         display: block;
-        min-height: 46vh;
+        min-height: 500px;
         background-image: url('../images/video/video.jpg');
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -39,6 +47,22 @@
                 width: 145px;
                 height: 145px;
             }
+        }
+
+        @media(max-width: $large) {
+            min-height: 420px;
+        }
+
+        @media(max-width: $tablet) {
+            min-height: 370px;
+        }
+
+        @media(max-width: $medium) {
+            min-height: 260px;
+        }
+
+        @media(max-width: $small-phone) {
+            min-height: 165px;
         }
     }
 
@@ -53,13 +77,10 @@
             width: 100px;
             height: 100px;
         }
-    }
 
-    @media(max-width: $tablet) {
-        padding-top: 8%;
-    }
-
-    @media(max-width: $small-phone) {
-        padding: 16% 0 3.2%;
+        @media(max-width: $small-phone) {
+            width: 80px;
+            height: 80px;
+        }
     }
 }

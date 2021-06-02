@@ -1,8 +1,16 @@
 .footer {
 
-    padding: 4% 0 2%;
+    padding: 65px 0 27px;
     font-size: 14px;
     color: $light-grey;
+
+    @media(max-width: $tablet) {
+        padding: 65px 0 0; 
+    }
+
+    @media(max-width: $medium) {
+        font-size: 15px;
+    } 
 
     &__columns {
         display: flex;
@@ -15,11 +23,15 @@
     }
 
     &__column {
-        max-width: 215px;
+        max-width: 219px;
         width: 100%;
 
         &:not(:first-child) {
             padding-top: 21px;
+
+            .footer__link {
+                padding: 14px 0;
+            }
         }
 
         &:nth-child(4) {
@@ -28,7 +40,7 @@
 
         &:last-child {
             padding-top: 34px;
-            margin-top: 5%;
+            margin-top: 60px;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -37,7 +49,8 @@
         }
 
         @media(max-width: $tablet) {
-            margin: 0 50px 20px 50px;
+            margin: 0 50px 30px 50px;
+            
             &:nth-child(1) {
                 order: 0;
             }
@@ -60,7 +73,7 @@
         }
 
         @media(max-width: $medium) {
-            margin: 0 20px 0 0;
+            margin: 0 20px 30px 0;
 
             &:last-child {
                 flex-wrap: wrap;
@@ -91,6 +104,7 @@
             &:nth-child(5) {
                 order: 4;
                 align-items: center;
+                margin-bottom: 20px;
             }
         }
     }
@@ -106,6 +120,16 @@
         text-transform: uppercase;
         color: #1f2044;
         text-align: left;
+
+        @media(max-width: $medium) {
+            font-size: 19px;
+        }
+    }
+
+    &__list {
+        @media(max-width: $small-phone) {
+            width: 100%;
+        }
     }
 
     &__item {
@@ -117,9 +141,17 @@
         font-weight: 400;
         color: $light-grey;
 
-        @media(max-width: $medium) {
-            font-size: 15px;
-        } 
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            color: $sky-blue;
+        }
 
         &--contacts {
             margin-bottom: 14px;
@@ -133,10 +165,22 @@
             &:hover {
                 color: $sky-blue;
             }
+
+            &:focus {
+                outline-color: $accent;
+            }
     
-            &:active, &:focus {
+            &:active {
                 color: $dark;
             }
+        }
+
+        @media(max-width: $tablet) {
+            font-size: 16px;
+        } 
+
+        @media(max-width: $small-phone) {
+            display: block;
         }
     }
 
@@ -144,19 +188,17 @@
         margin-bottom: 29px;
         display: block;
         line-height: 1.71;
+
+        @media(max-width: $tablet) {
+            font-size: 16px;
+        }
     }
 
     &__copyright {
         margin-bottom: 10px;
 
-        @media(max-width: $small-phone) {
-            margin-bottom: 24px;
-        }
-    }
-
-    &__menu {
         @media(max-width: $medium) {
-            padding: 14px 0 20px;
+            margin-bottom: 14px;
         }
     }
 
@@ -182,10 +224,10 @@
             &:first-child { 
                 padding-left: 0;
             }
+
+            &:not(:last-child) {
+                border: none;
+            }
         }
     }
-
-    @media(max-width: $medium) {
-        font-size: 15px;
-    } 
 }

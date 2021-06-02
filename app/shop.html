@@ -101,7 +101,7 @@
                 </h2>
                 <ul class="breadcrubms">
                     <li class="breadcrubms__item">
-                        <a class="breadcrubms__link" href="#">Home</a>
+                        <a class="breadcrubms__link" href="index.html">Home</a>
                     </li>
                     <li class="breadcrubms__item">
                         <a class="breadcrubms__link" href="#">Product list</a>
@@ -162,7 +162,7 @@
 
                         <div class="filter__item filter-price">
                             <span class="filter__title title">price</span>
-                            <form class="filter-type__form" action="#">
+                            <form class="filter-type__form filter-price__form" action="#">
                                 <input  class="filter-price__input" type="text" data-min="0" data-max="1000" data-from="100" data-to="500">
                                 <label class="filter-price__label">
                                     <span class="filter-price__from filter-price__cost"></span>
@@ -179,7 +179,7 @@
                                     <input class="filter-type__input sr-only" type="checkbox">
                                     <div class="filter-type__checkbox">
                                         <span>RFL</span>
-                                        <span>(10)</span>
+                                        <span class="filter-type__count">(10)</span>
                                     </div>
                                 </label>
 
@@ -187,7 +187,7 @@
                                     <input class="filter-type__input sr-only" type="checkbox">
                                     <div class="filter-type__checkbox">
                                         <span>Brothers</span>
-                                        <span>(21)</span>
+                                        <span class="filter-type__count">(21)</span>
                                     </div>
                                 </label>
 
@@ -195,7 +195,7 @@
                                     <input class="filter-type__input sr-only" type="checkbox">
                                     <div class="filter-type__checkbox">
                                         <span>Regal</span>
-                                        <span>(3)</span>
+                                        <span class="filter-type__count">(3)</span>
                                     </div>
                                 </label>
 
@@ -203,7 +203,7 @@
                                     <input class="filter-type__input sr-only" type="checkbox">
                                     <div class="filter-type__checkbox">
                                         <span>Nadia</span>
-                                        <span>(4)</span>
+                                        <span class="filter-type__count">(4)</span>
                                     </div>
                                 </label>
 
@@ -211,7 +211,7 @@
                                     <input class="filter-type__input sr-only" type="checkbox">
                                     <div class="filter-type__checkbox">
                                         <span>Otobi</span>
-                                        <span>(6)</span>
+                                        <span class="filter-type__count">(6)</span>
                                     </div>
                                 </label>
                             </form>
@@ -223,12 +223,552 @@
                         </div>
                     </aside>
                     <div class="shop-content">
+                        <div class="shop-content__top">
+                            <span>View</span>
 
+                            <button class="shop-content__switch shop-content__switch--active button-grid" type="button">
+                                <svg viewBox="0 0 15 15" width="15" height="15">
+                                    <use xlink:href="images/sprite.svg#grid"></use>
+                                </svg>
+                            </button>
+                            <button class="shop-content__switch button-list" type="button">
+                                <svg viewBox="0 0 20 15" width="20" height="15">
+                                    <use xlink:href="images/sprite.svg#list"></use>
+                                </svg>
+                            </button>
+
+                            <button class="shop-content__filter" type="button">
+                                <svg viewBox="0 0 32 32" width="22" height="22">
+                                    <use xlink:href="images/sprite.svg#filter"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="shop-content__cards">
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/radio1.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="product__box">
+                                    <h3 class="product__name">Wooden radio</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span> 
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div>    
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/radio1.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="product__box">
+                                    <h3 class="product__name">Wooden radio</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>  
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div>
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/chair1.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>    
+                                <div class="product__box">
+                                    <h3 class="product__name">Wooden chair</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>  
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div>                      
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/chair2.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__box">
+                                    <h3 class="product__name">White chair</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span> 
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>    
+                                </div>
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/table1.png" alt="mini-couch">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>  
+                                <div class="product__box">
+                                    <h3 class="product__name">Retro table</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button> 
+                                </div>
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/radio2.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__box">
+                                    <h3 class="product__name">Wooden radio</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span> 
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>   
+                                </div>       
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/chair3.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__box">            
+                                    <h3 class="product__name">Wooden chair</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button> 
+                                </div> 
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/chair4.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div> 
+                                <div class="product__box">
+                                    <h3 class="product__name">White chair</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>  
+                                </div>  
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img class="product__img" src="images/week-products/table2.png" alt="couch">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product__box">    
+                                    <h3 class="product__name">Retro table</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>   
+                                </div> 
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img src="images/novelty/sofa2.png" alt="sofa">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>        
+                                <div class="product__box">    
+                                    <h3 class="product__name">Retro table</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div>   
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img src="images/novelty/chair1.png" alt="chair">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>        
+                                <div class="product__box">    
+                                    <h3 class="product__name">Retro table</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div>   
+                            </article>
+                            <article class="product">
+                                <div class="product__top">
+                                    <img src="images/novelty/sofa3.png" alt="sofa">
+                                    <ul class="product__menu">
+                                        <li class="product__menu-item">
+                                            <a class="product__action" href="#" title="go to product card">
+                                                <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                                    <use xlink:href="images/sprite.svg#card"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to cart</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                                    <use xlink:href="images/sprite.svg#to-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                        <li class="product__menu-item">
+                                            <button class="product__action button button--round" type="button">
+                                                <span class="sr-only">add to favorite</span>
+                                                <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                                    <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>        
+                                <div class="product__box">    
+                                    <h3 class="product__name">Retro table</h3>
+                                    <div class="product__star"></div>
+                                    <span class="product__cost">
+                                        <span>$</span>
+                                            29.00
+                                    </span>
+                                    <p class="product__descr">
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        Ut enim ad minim veniam, quis nostrud exercitation
+                                    </p>
+                                    <button class="product__button">add to cart</button>
+                                </div> 
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-     
+        <div class="overflow">
+
+        </div>
     </main>
 
     <footer class="footer">

@@ -13,11 +13,12 @@
 
         @media(max-width: $small-phone) {
             margin-bottom: 0;
+            display: block;
         }
     }
 
     &__link-more {
-        padding: 7px 25px;
+        padding: 19px 25px;
         float: right;
         position: relative;
         font-size: 16px;
@@ -36,7 +37,12 @@
             color: $accent;
         }
 
-        &:focus, &:active {
+        &:focus {
+            outline-color: $sky-blue;
+            color: $grey-blue;
+        }
+
+        &:active {
             color: $sky-blue;
         }
 
@@ -54,6 +60,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        @media(max-width: $large) {
+            justify-content: space-around;
+        }
+        
         @media(max-width: $medium) {
             justify-content: center;
         }
@@ -71,9 +81,5 @@
         @media(max-width: $tablet) {
             display: none;
         }
-    }
-
-    @media(max-width: $small-phone) {
-        padding-top: 16%;
     }
 }

@@ -35,6 +35,7 @@
             width: 100%;
             background-color: #fff;
             transform: translateY(-200%);
+            z-index: 50;
             transition: transform 0.5s;
 
             &--active {
@@ -50,12 +51,12 @@
     &__burger {
         display: none;
         position: absolute;
-        top: 34%;
+        bottom: 32px;
         right: 20px;
         width: 44px;
         height: 44px;
         border: 1px solid #000;
-        z-index: 2;
+        z-index: 51;
 
         span {
             content: '';
@@ -66,7 +67,8 @@
             width: 50%;
             border: 1px solid #000;
 
-            &::before, &::after {
+            &::before, 
+            &::after {
                 content: '';
                 position: absolute;
                 left: 4%;
@@ -92,7 +94,7 @@
             display: block;
 
             &--active {
-                z-index: 3;
+                z-index: 51;
 
                 span {
                     visibility: hidden;
@@ -115,7 +117,7 @@
         }
 
         @media(max-width: $small-phone) {
-            top: 27%;
+            bottom: 18px;
         }
     }
 }

@@ -1,5 +1,5 @@
 .products {
-    padding-top: 3.5%;
+    padding-top: 68px;
 
     &__list {
         display: flex;
@@ -16,10 +16,10 @@
     }
 
     @media(max-width: $tablet) {
-        padding-top: 8%;
+        padding-top: 85px;
     }
 
     @media(max-width: $small-phone) {
-        padding-top: 16%;
+        padding-top: 65px;
     }
 }
