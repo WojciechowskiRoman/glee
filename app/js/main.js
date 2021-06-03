@@ -5,6 +5,7 @@ $(function() {
     rating: 4,
     normalFill: '#d6d6d6',
     ratedFill: "#ffcc00",
+    readOnly: true
 
   });
 
@@ -14,16 +15,16 @@ $(function() {
       onStart: function (data) {
           $('.filter-price__from').text("$" + data.from);
           $('.filter-price__to').text("$" + data.to);
-        },
+      },
       onChange: function (data) {
           $('.filter-price__from').text("$" + data.from);
           $('.filter-price__to').text("$" + data.to);
       },
   });
 
-  $('.shop-content__switch').on('click', function() {
-    $('.shop-content__switch').removeClass('shop-content__switch--active');
-    $(this).addClass('shop-content__switch--active');
+  $('.shop__switch').on('click', function() {
+    $('.shop__switch').removeClass('shop__switch--active');
+    $(this).addClass('shop__switch--active');
   });
 
   $('.button-list').on('click', function() {
@@ -34,7 +35,7 @@ $(function() {
     $('.product').removeClass('product--list');
   });
 
-  $('.shop-content__filter, .overflow').on('click', function() {
+  $('.shop__filter, .overflow').on('click', function() {
     $('.shop__filters').toggleClass('shop__filters--active');
     $('.overflow').toggleClass('overflow--active');
   });
@@ -57,8 +58,8 @@ $(function() {
       dots: true,
       swipe: false,
       adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
       fade: true,
       responsive: [
       {
@@ -79,19 +80,19 @@ $(function() {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             }
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
             }
           },
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
             }
           },
       ],

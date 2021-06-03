@@ -36,12 +36,12 @@
         font-weight: 400;
         color: rgba(#222933, 0.6);
 
-        &:hover {
-            color: #222933;
+        &:focus {
+            outline-color: $accent;
         }
 
-        &:active, &:focus {
-            color: $accent;
+        &:active {
+            color: $dark-blue;
         }
     }
 }

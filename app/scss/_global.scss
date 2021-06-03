@@ -36,6 +36,10 @@ a {
     color: $grey-blue;
     border-radius: 0;
     transition: all 0.5s;
+
+    &:hover {
+        color: $accent;
+    }
 }
 
 button {
@@ -139,7 +143,7 @@ address {
 
     &--active {
 
-        @media(max-width: $medium) {
+        @media(max-width: $tablet) {
             display: block;
         }
     }

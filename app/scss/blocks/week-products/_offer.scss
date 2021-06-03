@@ -40,19 +40,19 @@
         }
 
         @media(max-width: $medium) {
-            padding: 4% 1% 4% 1%;
+            padding: 4% 1% 6% 1%;
 
 
             &:nth-child(2) {
-                padding: 4% 1% 4% 1%;
+                padding: 4% 1% 6% 1%;
             }
         }
 
         @media(max-width: $small-phone) {
-            padding: 4% 0 8%;
+            padding: 4% 0 9%;
 
             &:nth-child(2) {
-                padding: 4% 0 8%;
+                padding: 4% 0 9%;
             }
         }
     }

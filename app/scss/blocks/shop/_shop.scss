@@ -1,6 +1,18 @@
 .shop {
     padding: 118px 0;
 
+    @media(max-width: $tablet) {
+        padding: 90px 0;
+    }
+
+    @media(max-width: $medium) {
+        padding: 65px 0 40px;
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 50px 0 30px;
+    }
+
     &__inner {
         position: relative;
         display: flex;
@@ -12,7 +24,6 @@
         width: 100%;
 
         @media(max-width: $tablet) {
-            padding-top: 0;
             position: absolute;
             top: 0;
             bottom: 0;
@@ -27,14 +38,15 @@
 
         &--active {
             transform: translateX(0);
+            height: fit-content;
         }
     }
-}
 
-.shop-content {
-    width: 100%;
+    &__content {
+        width: 100%;
+    }
 
-    &__top {
+    &__sort {
         margin-bottom: 30px;
         padding: 23px 31px 21px;
         border: 1px solid rgba($sky-blue, 0.6);
@@ -67,10 +79,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media(max-width: $large) {
+            justify-content: space-around;
+        }
     }
 }
 
 .filter {
+
     &__title {
         margin-bottom: 25px;
         position: relative;
@@ -113,13 +130,11 @@
 
     &__label {
         display: block;
+
         &:not(:last-child) {
             margin-bottom: 5px;
         }
     }
-}
-
-.filter-type {
 
     &__input {
         &:checked + .filter-type__checkbox {
@@ -131,6 +146,9 @@
             }
         }
     }
+}
+
+.filter-type {
 
     &__checkbox {
         padding: 15px 22px 14px 14px;
@@ -142,10 +160,13 @@
         transition: background-color 0.3s;
 
         &:hover {
-            background-color: rgba($sky-blue, 0.1);
 
-            .filter-type__count {
-                color: $dark-blue;
+            @media(min-width: $tablet) {
+                background-color: rgba($sky-blue, 0.1);
+
+                .filter-type__count {
+                    color: $dark-blue;
+                }
             }
         }
 

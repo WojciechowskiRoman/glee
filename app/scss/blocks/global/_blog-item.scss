@@ -43,10 +43,6 @@
         background-color: $sky-blue;
         transition: color 0.5s, background-color 0.5s, transform 0.2s;
 
-        &:hover {
-            color: $accent;
-        }
-
         &:focus{
             background-color: $accent;
             color: $dark;
@@ -140,10 +136,6 @@
         &::before {
             background-image: url(../images/blog/author.svg);
             background-size: 18px;
-        }
-
-        &:hover {
-            color: $accent;
         }
 
         &:focus {

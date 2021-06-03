@@ -24,10 +24,6 @@
     &__link {
         padding: 13px 0;
 
-        &:hover {
-            color: $accent;
-        }
-
         &:focus {
             outline-color: $accent;
         }
