@@ -175,28 +175,29 @@ address {
 }
 
 .pagination {
-    padding: 75px 0 120px;
+    padding: 93px 0 120px;
     display: flex;
     justify-content: center;
 
-    &--list {
-        justify-content: flex-start;
-    }
-
     @media(max-width: $large) {
-        padding: 65px 0 75px;
+        padding: 65px 0 105px;
     }
 
     @media(max-width: $tablet) {
-        padding: 55px 0 60px;
+        padding: 55px 0 90px;
     }
 
     @media(max-width: $medium) {
-        padding: 40px 0 35px;
+        padding: 40px 0 65px;
     }
 
     @media(max-width: $small-phone) {
-        padding: 20px 0 20px;
+        padding: 20px 0 50px;
+    }
+
+    &--list {
+        padding: 43px 0 120px;
+        justify-content: flex-start;
     }
 
     &__item {
