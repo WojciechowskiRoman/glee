@@ -33,170 +33,85 @@
         margin: 0 0 30px 0;
     }
 
-    &--list {
+    &--recent {
+        margin-bottom: 25px;
         flex-direction: unset;
         justify-content: flex-start;
         align-items: flex-start;
         min-width: 100%;
         box-shadow: none;
+        cursor: pointer;
 
-        @media(max-width: $tablet) {
-            &:not(:last-child) {
-                margin: 0 0 30px 0;
-            }
-        }
-
-        @media(max-width: $medium) {
-            flex-direction: column;
-            align-items: center;
-        }
-        
         .product {
-            
+
             &__top {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 82px 23px;
-                width: 370px;
-                height: 100%;
-                border: 2px solid #f2f2f2;
-
-                @media(max-width: $medium) {
-                    padding: 55px 23px;
-                    width: 320px;
-                }
-
-                @media(max-width: $small-phone) {
-                    width: 290px;
-                }
+                padding: 0;
+                margin-right: 20px;
             }
 
             &__img {
-                height: max-content;
-                width: inherit;
-                max-width: 370px;
-            }
-
-            &__menu {
-                justify-content: flex-end;
-                left: 0;
-                right: -187px;
-                bottom: 50px;
-                opacity: 1;
-
-                @media(max-width: $large) {
-                    right: -153px;
-                }
-
-                @media(max-width: $medium) {
-                    justify-content: center;
-                    left: 26px;
-                    right: 0;
-                    bottom: 50px;
-                    opacity: 0;
-                    transition: opacity 0.5s;
-                }
-            }
-
-            &__menu-item {
-                &:first-child {
-                    display: none;
-                }
-            }
-
-            &__action {
-                box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.13);
-
-                &:first-child {
-                    border-radius: unset;
-                }
-
-                @media(max-width: $medium) {
-
-                    &:first-child {
-                        border-radius: 50%;
-                    }
-                }
+                width: 71px;
+                height: 71px;
+                object-fit: contain;
             }
 
             &__box {
-                padding: 90px 15px 79px 57px;
-                align-items: flex-start;
-
-                @media(max-width: $large) {
-                    padding: 90px 15px 79px 20px;
-                }
-
-                @media(max-width: $medium) {
-                    padding: 50px 15px 20px 20px;
-                    align-items: center;
-                }
-
-                @media(max-width: $small-phone) {
-                    padding: 35px 10px 20px 10px;
-                }
-            }
-
-            &__name {
-                margin-bottom: 25px;
-                font-size: 40px;
-                line-height: 1.2;
-                color: #333333;
-
-                @media(max-width: $medium) {
-                    font-size: 42px;
-                }
-
-                @media(max-width: $small-phone) {
-                    font-size: 30px;
-                }
-            }
-
-            &__star {
                 padding: 0;
-                margin-bottom: 37px;
-                display: block;
+                align-items: flex-start;
+            }
+        
+            &__name {
+                margin-bottom: 11px;
+                font-size: 14px;
+                line-height: 1;
+            }
 
-                @media(max-width: $medium) {
-                    margin-bottom: 30px;
-                }
+            &__star-mini {
+                padding: 0;
+                margin-bottom: 11px;
+                display: block;
             }
 
             &__cost {
-                margin-bottom: 36px;
-                font-size: 30px;
+                font-size: 15px;
                 color: #333333;
-
-                @media(max-width: $medium) {
-                    margin-bottom: 23px;
-                }
-
-                @media(max-width: $small-phone) {
-                    font-size: 24px;
-                }
-            }
-
-            &__descr {
-                margin-bottom: 34px;
-                display: block;
                 font-family: 'Rubik', sans-serif;
-                line-height: 1.9;
-                color: $dark-blue;
-
-                @media(max-width: $medium) {
-                    margin-bottom: 0;
-                    font-size: 18px;
-                    text-align: center;
-                }
+                font-weight: 400;
             }
         }
 
         &:hover {
+
             .product__top {
                 transform: scale(1.0);
+            }
+
+            .product__img {
+                opacity: 1;
+                animation: flash 2s;
             } 
+
+            @-webkit-keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
+    }
+
+    &__link {
+        display: flex;
     }
 
     &__top {
@@ -205,6 +120,11 @@
         display: block;
         height: fit-content;
         transition: transform 0.5s;
+    }
+
+    &__img {
+        max-height: 206px;
+        object-fit: contain;
     }
 
     &__name {
@@ -237,6 +157,10 @@
 
         @media(max-width: $medium) {
             font-size: 19px;
+        }
+
+        &--list {
+            display: none;
         }
     }
 
@@ -280,6 +204,7 @@
 
         &:hover {
             background-color: $sky-blue;
+
             .product__menu-icon {
                 fill: #fff;
             }

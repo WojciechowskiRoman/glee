@@ -5,8 +5,15 @@ $(function() {
     rating: 4,
     normalFill: '#d6d6d6',
     ratedFill: "#ffcc00",
-    readOnly: true
+    readOnly: true,
+  });
 
+  $(".product__star-mini").rateYo({
+    starWidth: "11px",
+    rating: 4,
+    normalFill: '#d6d6d6',
+    ratedFill: "#ffcc00",
+    readOnly: true
   });
 
   $(".filter-price__input").ionRangeSlider({
@@ -28,11 +35,13 @@ $(function() {
   });
 
   $('.button-list').on('click', function() {
-    $('.product').addClass('product--list');
+    $('.shop__cards').addClass('shop__cards--list');
+    $('.pagination').addClass('pagination--list')
   });
 
   $('.button-grid').on('click', function() {
-    $('.product').removeClass('product--list');
+    $('.shop__cards').removeClass('shop__cards--list');
+    $('.pagination').removeClass('pagination--list')
   });
 
   $('.shop__filter, .overflow').on('click', function() {
@@ -40,9 +49,14 @@ $(function() {
     $('.overflow').toggleClass('overflow--active');
   });
 
-  $("a[href^='#']").click(function(){
+  $('.pagination__item').on('click', function() {
+    $('.pagination__item').removeClass('pagination__item--active');
+    $(this).addClass('pagination__item--active');
+  })
+
+  $("a[href^='#']").on('click', function() {
       var _href = $(this).attr("href");
-      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"},1200);
       return false;
   });
 
@@ -58,8 +72,8 @@ $(function() {
       dots: true,
       swipe: false,
       adaptiveHeight: true,
-      // autoplay: true,
-      // autoplaySpeed: 3000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       fade: true,
       responsive: [
       {
@@ -101,6 +115,20 @@ $(function() {
   $(window).on('scroll', function() {
       $('.header__menu').toggleClass('header__menu--active', $(this).scrollTop() > 0);
   });
+
+  $(window).on('scroll', function() {
+        if ($(this).scrollTop()> 500) {
+            $('.arrow--up').fadeIn("slow");
+        } else {
+            $('.arrow--up').fadeOut("slow");
+        }
+    });
+
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop()>=$(document).height()-"999") $(".arrow--down").fadeOut("slow");
+        else $(".arrow--down").fadeIn("slow");
+  });
+
 
   var cardsContainerFisrt = document.querySelector('[data-ref="mix-first"]');
   var cardsContainerSecond = document.querySelector('[data-ref="mix-second"]');

@@ -23,28 +23,28 @@
     <header class="header">
         <div class="container">
             <nav class="header__menu menu">
-                <a class="logo" href="#body" title="go to main page">
+                <a class="logo" href="index.html" title="go to main page">
                     <img src="images/logo.svg"  alt="logo">
                 </a>
 
                 <ul class="header__menu-list menu__list">
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#">Home +</a>
+                        <a class="menu__link" href="index.html">Home +</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#">About</a>
+                        <a class="menu__link" href="#">About</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#">Services</a>
+                        <a class="menu__link" href="shop.html">Catalog</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#">Pages +</a>
+                        <a class="menu__link" href="#">Pages +</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#">News</a>
+                        <a class="menu__link" href="#">News</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link link-hover" href="#footer">Contact</a>
+                        <a class="menu__link" href="#">Contact</a>
                     </li>
                 </ul>
 
@@ -112,7 +112,7 @@
      
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container container--small">
             <ul class="footer__columns">
                 <li class="footer__column">
@@ -221,6 +221,17 @@
             </ul>
         </div>
     </footer>
+
+    <a class="arrow arrow--up" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+    <a class="arrow arrow--down" href="#footer">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
 
     <script src="js/main.min.js"></script>
 </body>
