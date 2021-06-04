@@ -52,31 +52,6 @@ address {
     font-style: normal;
 }
 
-.arrow {
-    display: none;
-    position: fixed;
-    right: 15px;
-    z-index: 9;
-    opacity: 0.7;
-    transition: opacity 0.5s;
-
-    &--up {
-        bottom:85px;
-    }
-
-    &--down {
-        bottom: 40px;
-
-        svg {
-            transform: rotate(180deg);
-        }
-    }
-
-    &:hover {
-        opacity: 1;
-    }
-}
-
 .container {
     max-width: 1800px;
     padding: 0 15px;
@@ -96,6 +71,47 @@ address {
     @media(max-width: $small-phone) {
         margin-bottom: 10px;
         font-size: 26px;
+    }
+}
+
+.breadcrubms {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        position: relative;
+        &:not(:last-child) {
+            padding-right: 20px;;
+            &::after {
+                content: '/';
+                position: absolute;
+                right: 6px;
+                top: 1px;
+                color: rgba(#222933, 0.6);
+            }
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(#222933, 0.6);
+
+        @media(max-width: $tablet) {
+            font-size: 17px;
+        }
+
+        @media(max-width: $small-phone) {
+            font-size: 18px;
+        }
+
+        &:focus {
+            outline-color: $accent;
+        }
+
+        &:active {
+            color: $dark-blue;
+        }
     }
 }
 
@@ -152,25 +168,28 @@ address {
     }
 }
 
-.lock {
-    overflow: hidden;
-}
-
-.overflow {
+.arrow {
     display: none;
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
-    background-color: rgba(52, 52, 58, .4);
+    right: 15px;
+    z-index: 9;
+    opacity: 0.7;
+    transition: opacity 0.5s;
 
-    &--active {
+    &--up {
+        bottom:85px;
+    }
 
-        @media(max-width: $tablet) {
-            display: block;
+    &--down {
+        bottom: 40px;
+
+        svg {
+            transform: rotate(180deg);
         }
+    }
+
+    &:hover {
+        opacity: 1;
     }
 }
 
@@ -198,8 +217,20 @@ address {
     &--list {
         padding: 43px 0 120px;
         justify-content: flex-start;
-    }
 
+        @media(max-width: $large) {
+            padding: 43px 0 90px;
+        }
+    
+        @media(max-width: $medium) {
+            justify-content: center;
+        }
+    
+        @media(max-width: $small-phone) {
+            padding: 43px 0 70px;
+        }
+    }
+    
     &__item {
         display: flex;
         align-items: center;
@@ -209,6 +240,11 @@ address {
         margin-right: 15px;
         border: solid 1px #a3bbc8;
         transition: background-color 0.5s, box-shadow 0.5s;
+
+        @media(max-width: $small-phone) {
+            width: 45px;
+            height: 45px;
+        }
 
         &:last-child {
             width: 74px;
@@ -239,6 +275,28 @@ address {
     &__link {  
         padding: 16px 20px;
     }
+}
+
+.overflow {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(52, 52, 58, .4);
+
+    &--active {
+
+        @media(max-width: $tablet) {
+            display: block;
+        }
+    }
+}
+
+.lock {
+    overflow: hidden;
 }
 
 .sr-only {

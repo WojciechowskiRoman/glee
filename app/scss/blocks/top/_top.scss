@@ -10,38 +10,13 @@
         font-family: 'Rubik', sans-serif;
         font-weight: 300;
         color: #222933;
-    }
-}
 
-.breadcrubms {
-    display: flex;
-    justify-content: center;
-
-    &__item {
-        position: relative;
-        &:not(:last-child) {
-            padding-right: 20px;;
-            &::after {
-                content: '/';
-                position: absolute;
-                right: 6px;
-                top: 1px;
-                color: rgba(#222933, 0.6);
-            }
-        }
-    }
-
-    &__link {
-        font-size: 14px;
-        font-weight: 400;
-        color: rgba(#222933, 0.6);
-
-        &:focus {
-            outline-color: $accent;
+        @media(max-width: $tablet) {
+            font-size: 40px;
         }
 
-        &:active {
-            color: $dark-blue;
+        @media(max-width: $small-phone) {
+            font-size: 37px;
         }
     }
 }
