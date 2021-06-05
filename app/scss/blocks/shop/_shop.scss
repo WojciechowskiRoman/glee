@@ -424,16 +424,14 @@
 
 .filter-price {
 
+    @media(max-width: $tablet) {
+        padding: 0 10px;
+    }
+
     &__label {
         padding-bottom: 20px;
         display: flex;
         justify-content: space-between;
-    }
-
-    &__form {
-        @media(max-width: $tablet) {
-            padding: 0 10px;
-        }
     }
 }
 
