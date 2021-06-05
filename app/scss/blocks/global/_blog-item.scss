@@ -1,6 +1,6 @@
 .blog-item {
 
-    margin: 0 10px 40px 0;
+    margin: 20px 10px 10px 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -16,11 +16,24 @@
     }
     
     @media(max-width: $tablet) {
+        margin: 40px 10px 10px 0;
         max-width: 356px;
+
+        &:last-child {
+            margin: 40px 10px 40px 0;
+        }
     }
 
     @media(max-width: $small-phone) {
-        margin-right: 0;
+        margin: 20px 0 10px 0;
+
+        &:first-child {
+            margin: 0 0 10px 0;
+        }
+
+        &:last-child {
+            margin: 20px 0 50px 0;
+        }
     }
 
     &__top {

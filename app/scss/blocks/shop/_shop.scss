@@ -312,20 +312,7 @@
             }
         }
     }
-}
 
-.partners {
-    &__list {
-        padding: 75px 0 86px;
-
-        @media(max-width: $tablet) {
-            padding: 65px 0;
-        }
-
-        @media(max-width: $small-phone) {
-            padding: 55px 0;
-        }
-    }
 }
 
 .filter {
