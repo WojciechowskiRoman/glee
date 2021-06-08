@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+    <h1 class="sr-only">Glee - e-commerce</h1>
+
+    <header class="header">
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="index.html" title="go to main page">
+                <img class="logo__img" src="images/logo.svg"  alt="logo">
+            </a>
+
+            <ul class="header__menu-list menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Home +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="shop.html">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Pages +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">News</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="userbar">
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 15.28 15.281" width="15.28" height="15.281">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        <span class="sr-only">Site search</span>
+                    </button>
+                </li>
+                
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--like" href="#">
+                        <svg viewBox="0 0 17.87 15.531" width="17.87" height="15.531">
+                            <use xlink:href="images/sprite.svg#like"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>      
+                </li>
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--cart" href="#">
+                        <svg viewBox="0 0 18.94 16.969" width="18.94" height="16.969">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>
+                </li>
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 20.03 20.031" width="22" height="22" fill="#fff">
+                            <use xlink:href="images/sprite.svg#dots"></use>
+                        </svg>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="header__burger button button--round" type="button">
+                <span></span>
+            </button> 
+        </nav>
+    </div>
+</header>
+
+    <main>
+
+        <div class="top">
+            <div class="top__inner">
+                <h2 class="top__title title">
+                    About Us
+                </h2>
+                <ul class="breadcrubms">
+                    <li class="breadcrubms__item">
+                        <a class="breadcrubms__link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrubms__item">
+                        <a class="breadcrubms__link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="container container--small">
+                <div class="about__info wow" data-wow-offset="10">
+                    <div class="about__time">
+                        <span class="about__year">12</span>
+                        <span class="about__experience">
+                            <p>Years</p>
+                            <p>Experience</p>
+                            <p>Working</p>
+                        </span>
+                    </div>
+                    <h2 class="about__title title">Mission of our creative house</h2>
+                    <span class="about__text">
+                        <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        </p>
+                    </span>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <span class="about__number about__number--projects">520+</span>
+                            <span class="about__advantage">Projects</span>
+                        </li>
+                        <li class="about__item">
+                            <span class="about__number about__number--revenue">$4M</span>
+                            <span class="about__advantage">Revenue</span>
+                        </li>
+                        <li class="about__item">
+                            <span class="about__number about__number--awards">250</span>
+                            <span class="about__advantage">Awards</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="widgets">
+            <div class="container container--small">
+                <ul class="widgets__list wow" data-wow-offset="150">
+                    <li class="widgets__item">
+                        <span class="widgets__number">99%</span>
+                        <span>Satisﬁed Clients Rate</span>
+                    </li>
+                    <li class="widgets__item">
+                        <span class="widgets__number">5020+</span>
+                        <span>Products Delivered</span>
+                    </li>
+                    <li class="widgets__item">
+                        <span class="widgets__number">23hr</span>
+                        <span>Daily Working Time</span>
+                    </li>
+                    <li class="widgets__item">
+                        <span class="widgets__number">140+</span>
+                        <span>Brands in Store</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+                
+        <section class="command">
+            <div class="container container--small">
+                <div class="command__inner">
+                    <div class="command__team">
+                        <h2 class="command__title title">Our Team</h2>
+                        <span class="command__descr">
+                            <p>
+                                Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod 
+                                tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                        </span>
+                        <a class="command__link link-button" href="#">
+                            Join With US
+                            <svg class="link-button__icon link-button__icon--join" viewBox="0 0 15 11" width="15" height="11">
+                                <use xlink:href="images/sprite.svg#arrow-join"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="command__list wow" data-wow-offset="50">
+                        <li class="command__person">
+                            <div class="command__box">
+                                <div class="command__info">
+                                    <span class="command__name">Eliza Elliot</span>
+                                    <span class="command__position">Commodo tempor</span>
+                                </div>
+                                <ul class="command__social">
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="command__person">
+                            <div class="command__box">
+                                <div class="command__info">
+                                    <span class="command__name">Roscoe A.</span>
+                                    <span class="command__position">Commodo tempor</span>
+                                </div>
+                                <ul class="command__social">
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="command__person">
+                            <div class="command__box">
+                                <div class="command__info">
+                                    <span class="command__name">Ruby M.</span>
+                                    <span class="command__position">Commodo tempor</span>
+                                </div>
+                                <ul class="command__social">
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="command__person">
+                            <div class="command__box">
+                                <div class="command__info">
+                                    <span class="command__name">Marie F. Bloss</span>
+                                    <span class="command__position">Commodo tempor</span>
+                                </div>
+                                <ul class="command__social">
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="command__social-item">
+                                        <a class="command__social-link" href="#">
+                                            <svg class="command__social-icon" viewBox="0 0 18 18" width="18" height="18" fill="#888888">
+                                                <use xlink:href="images/sprite.svg#google"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+       
+        <section class="articles">
+    <div class="container container--small">
+        <h2 class="articles__title title">Our Insights & Articles</h2>
+        <a class="articles__link-more" href="#">View All</a>
+        <div class="articles__list wow" data-wow-offset="20">
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog1.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>  
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog2.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Aonsectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog3.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Rncididunt ut labore et dolore magna aliqua. Ut enim
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+         
+        <div class="partners">
+    <div class="container container--small">
+        <ul class="partners__list">
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/peterson.png" alt="partner peterson">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/kmn.png" alt="partner kmn consulting">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/chainforce.png" alt="partner chainforce">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/nextg3n.png" alt="partner next3gn">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/vintage.png" alt="partner vintage">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/peterson.png" alt="partner peterson">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/kmn.png" alt="partner kmn consulting">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/chainforce.png" alt="partner chainforce">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/nextg3n.png" alt="partner next3gn">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/vintage.png" alt="partner vintage">
+            </li>
+        </ul>
+    </div>
+</div>
+     
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container container--small">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <a class="logo logo--footer" href="#body" title="go to main page">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <address class="footer__address">
+                    <span class="footer__link footer__link--contacts">
+                        <span>address:</span> 
+                        4772 Wines Lane
+                        Houston, TX 77032
+                    </span>
+                    <a class="footer__link footer__link--contacts" href="tel:+8323475843">
+                        <span class="footer__link footer__link--contacts">Telephone: +832-347-5843</span>
+                    </a>
+                    <a class="footer__link footer__link--contacts" href="mailto:contact@Glee.com">
+                        <span>email</span>: contact@Glee.com
+                    </a>
+                </address>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">services</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Return Policy</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Our Blog</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Terms & Condition</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">account</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Your Account</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Checkout</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Login</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+                
+            <li class="footer__column">
+                <span class="footer__title title">newsletter</span>
+                <span class="footer__text">
+                    <p>
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                </span>
+                <form class="form">
+                    <label class="form__label">
+                        <input class="form__email" type="email" name="email" placeholder="Email address" required>
+                    </label>     
+                    <button class="form__button button" type="submit">Subscribe</button>
+                </form>
+            </li>
+
+            <li class="footer__column">
+                <p class="footer__copyright">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+
+                <nav class="footer__menu menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">About</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <a class="arrow arrow--up" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+    <a class="arrow arrow--down" href="#footer">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+.aside {
+
+    margin-right: 27px;
+    max-width: 270px;
+    width: 100%;
+
+    @media(max-width: $tablet) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -14px;
+        right: 0;
+        max-width: 280px;
+        z-index: 11;
+        background-color: white;
+        transform: translateX(-200%);
+        transition: transform 0.5s;
+    }
+
+    @media(max-width: $small-phone) {
+        max-width: 260px;
+    }
+
+    &--active {
+        transform: translateX(0);
+        height: fit-content;
+    }
+
+    &__filter {
+        margin-bottom: 60px;
+
+        @media(max-width: $tablet) {
+            padding: 15px 10px 0 15px;
+        }
+
+        @media(max-width: $medium) {
+            margin-bottom: 35px;
+        }
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        max-width: 200px;
+        color: $dark-blue;
+        text-align: left;
+        text-transform: uppercase;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 50%;
+            right: -54px;
+            height: 3px;
+            width: 39px;
+            background-color: $sky-blue;
+        }
+
+        @media(max-width: $tablet) {
+            padding-left: 10px;
+        }
+    }
+
+    &__label {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &--price {
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__input {
+        &:checked + .aside__checkbox {
+            background-color: rgba($sky-blue, 0.2);
+            border-radius: 5px;
+            
+            .aside__count {
+                color: $dark-blue;
+            }
+        }
+    }
+
+    &__checkbox {
+        padding: 15px 22px 14px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 270px;
+        font-family: 'Rubik', sans-serif;
+        color: $dark-blue;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+
+            @media(min-width: $tablet) {
+                background-color: rgba($sky-blue, 0.1);
+
+                .aside__count {
+                    color: $dark-blue;
+                }
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 15px 22px 14px 10px;
+        }
+    }
+
+    &__checkbox-type {
+        max-width: 100%;
+    }
+
+    &__count {
+        max-width: 30%;
+        color: #b3b3b3;
+    }
+
+    &__product {
+        padding-left: 10px;
+        margin-bottom: 27px;
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Rubik', sans-serif;
+        color: #333;
+
+        &:hover {
+
+            .aside__product-img {
+                opacity: 1;
+                animation: flash 2s;
+            } 
+
+            @-webkit-keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes flash {
+                0% {
+                    opacity: .4;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__product-link {
+       margin-right: 18px;
+    }
+
+    &__product-img {
+        padding: 3px 0;
+        width: 71px;
+        height: 71px;
+        object-fit: contain;
+        border: solid 2px #f2f2f2;
+    }
+
+    &__product-box {
+        max-width: 92px;
+    }
+
+    &__product-name {
+        margin-bottom: 11px;
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    &__product-star {
+        margin-bottom: 11px;
+        padding: 0;
+    }
+
+    &__product-cost {
+        font-size: 15px;
+        max-width: 100%;
+    }
+}

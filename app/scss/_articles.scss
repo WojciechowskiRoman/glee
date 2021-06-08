@@ -55,8 +55,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        animation: fadeInUp 1s;
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             justify-content: space-around;
         }
         

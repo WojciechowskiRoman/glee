@@ -7,6 +7,7 @@ const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 const svgSprite = require('gulp-svg-sprite');
+const fileinclude = require('gulp-file-include');
 
 function browsersync() {
     browserSync.init({
@@ -37,6 +38,7 @@ function scripts() {
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
         'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/wow.js/dist/wow.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -61,16 +63,14 @@ function images() {
     .pipe(dest('dist/images'))
 }
 
-function svgSprites() {
-    return src('app/images/**/*.svg')
-    .pipe(svgSprite({
-        mode: {
-            stack: {
-                sprite: "../sprite.svg"
-            }
-        }
-    }))
-    .pipe(dest('./app/images/'))
+function htmlInclude() {
+    return src('app/html/pages/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(dest('app'))
+        .pipe(browserSync.stream());
 }
 
 function cleanDist() {
@@ -91,6 +91,7 @@ function watching() {
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserSync.reload);
     watch(['app/images/**.svg'], svgSprite);
+    watch(['app/html/**/*.html'], htmlInclude);
 }
 
 
@@ -100,6 +101,7 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.htmlInclude = htmlInclude;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, browsersync, htmlInclude, watching);

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    animation: fadeInLeft 1s;
 
     @media(max-width: $tablet) {
         margin-top: 110px;
@@ -23,7 +24,7 @@
             padding: 4.5% 0 4% 24%;
         }
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             &:nth-child(2) {
                 padding: 4.5% 0 4% 21%;
             }
@@ -63,7 +64,7 @@
         bottom: 7vh;
         max-width: 12vw;
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             left: 5vw;
         }
 
@@ -91,7 +92,7 @@
         font-size: 26px;
         line-height: 1.23;
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             padding: 0 15px;
         }
 
@@ -111,7 +112,7 @@
         width: 100%;
         line-height: 1.9;
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             padding: 0 15px;
         }
 
@@ -128,6 +129,7 @@
         border-radius: 5px;
         text-align: left;
         color: $grey-blue;
+        background-color: transparent;
         fill: $dark-blue;
 
         @media(max-width: $small-phone) {

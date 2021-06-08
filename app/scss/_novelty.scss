@@ -23,8 +23,9 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        animation: fadeInLeft 1.5s;
     
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             justify-content: space-around;
         }
     
@@ -41,6 +42,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        animation: fadeIn 1s;
 
         &:hover {
             .novelty__video-icon {
@@ -49,7 +51,7 @@
             }
         }
 
-        @media(max-width: $large) {
+        @media(max-width: $extra-large) {
             min-height: 420px;
         }
 

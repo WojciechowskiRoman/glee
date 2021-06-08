@@ -43,6 +43,17 @@ html {
   
   a {
     text-decoration: none;
+    word-wrap: break-word;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  span, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
   }
   
   input,
