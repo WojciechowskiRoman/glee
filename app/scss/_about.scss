@@ -144,6 +144,7 @@
         padding: 11px 27px 17px 27px;
         display: flex;
         flex-direction: column;
+        max-width: 149px;
         font-weight: 700;
 
         &:not(:last-child) {
@@ -228,6 +229,10 @@
         align-items: center;
         font-size: 18px;
         position: relative;
+
+        span {
+            max-width: 185px;
+        }
 
         &::before {
             content: '';
@@ -431,6 +436,7 @@
     &__info {
         display: flex;
         flex-direction: column;
+        max-width: 135px;
     }
 
     &__name {
