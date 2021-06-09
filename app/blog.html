@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+    <h1 class="sr-only">Glee - e-commerce</h1>
+
+    <header class="header">
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="index.html" title="go to main page">
+                <img class="logo__img" src="images/logo.svg"  alt="logo">
+            </a>
+
+            <ul class="header__menu-list menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Home +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="shop.html">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Pages +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="blog.html">News</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="userbar">
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 15.28 15.281" width="15.28" height="15.281">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        <span class="sr-only">Site search</span>
+                    </button>
+                </li>
+                
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--like" href="#">
+                        <svg viewBox="0 0 17.87 15.531" width="17.87" height="15.531">
+                            <use xlink:href="images/sprite.svg#like"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>      
+                </li>
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--cart" href="#">
+                        <svg viewBox="0 0 18.94 16.969" width="18.94" height="16.969">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>
+                </li>
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 20.03 20.031" width="22" height="22" fill="#fff">
+                            <use xlink:href="images/sprite.svg#dots"></use>
+                        </svg>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="header__burger button button--round" type="button">
+                <span></span>
+            </button> 
+        </nav>
+    </div>
+</header>
+
+    <main>
+
+        <div class="top">
+            <div class="top__inner">
+                <h2 class="top__title title">
+                    Blog
+                </h2>
+                <ul class="breadcrubms">
+                    <li class="breadcrubms__item">
+                        <a class="breadcrubms__link" href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrubms__item">
+                        <a class="breadcrubms__link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="blog">
+            <div class="container container--small">
+                <div class="blog__inner">
+                    <ul class="blog__list">
+                        <li class="blog__item">
+                            <a class="blog__link" href="#">
+                                <img class="blog__img" src="../images/blog/blogBig1.jpg" alt="blog image">
+                                <object class="blog__info">
+                                    <time class="blog__date blog__posted" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                    <a class="blog__author blog__posted" href="#">
+                                        <svg viewBox="0 0 12 15" width="12" height="12" height="15">
+                                            <use xlink:href="images/sprite.svg#author"></use>
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </object> 
+                            </a>
+                            <span class="blog__title title">
+                                Fonsectetur adipisicing  eiusmod
+                            </span>
+                            <span class="blog__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor 
+                                    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                            </span>
+                            <a class="blog__view link-button" href="#">
+                                View More
+                                <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="blog__item">
+                            <a class="blog__link" href="#">
+                                <img class="blog__img" src="../images/blog/blogBig2.jpg" alt="blog image">
+                                <object class="blog__info">
+                                    <time class="blog__date blog__posted" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                    <a class="blog__author blog__posted" href="#">
+                                        <svg viewBox="0 0 12 15" width="12" height="12" height="15">
+                                            <use xlink:href="images/sprite.svg#author"></use>
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </object> 
+                            </a>
+                            <span class="blog__title title">
+                                Fonsectetur adipisicing elit,
+                            </span>
+                            <span class="blog__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor 
+                                    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                            </span>
+                            <a class="blog__view link-button" href="#">
+                                View More
+                                <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="blog__item">
+                            <a class="blog__link" href="#">
+                                <img class="blog__img" src="../images/blog/blogBig3.jpg" alt="blog image">
+                                <object class="blog__info">
+                                    <time class="blog__date blog__posted" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                    <a class="blog__author blog__posted" href="#">
+                                        <svg viewBox="0 0 12 15" width="12" height="12" height="15">
+                                            <use xlink:href="images/sprite.svg#author"></use>
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </object> 
+                            </a>
+                            <span class="blog__title title">
+                                Fsectetur adipisicing tempor incididunt
+                            </span>
+                            <span class="blog__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor 
+                                    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                            </span>
+                            <a class="blog__view link-button" href="#">
+                                View More
+                                <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="blog__item">
+                            <a class="blog__link" href="#">
+                                <img class="blog__img" src="../images/blog/blogBig4.jpg" alt="blog image">
+                                <object class="blog__info">
+                                    <time class="blog__date blog__posted" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                    <a class="blog__author blog__posted" href="#">
+                                        <svg viewBox="0 0 12 15" width="12" height="12" height="15">
+                                            <use xlink:href="images/sprite.svg#author"></use>
+                                        </svg>
+                                        by admin
+                                    </a>
+                                </object> 
+                            </a>
+                            <span class="blog__title title">
+                                vonsectetur adipisicing elit
+                            </span>
+                            <span class="blog__text">
+                                <p>
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor 
+                                    sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                            </span>
+                            <a class="blog__view link-button" href="#">
+                                View More
+                                <svg class="link-button__icon" viewBox="0 0 22 9" width="22" height="9">
+                                    <use xlink:href="images/sprite.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <aside class="aside">
+                        <form class="aside__filter" action="#">
+                            <label class="aside__label aside__label--search">
+                                <input class="aside__search" type="text">
+                                <button class="aside__button" type="submit">
+                                    <svg viewBox="0 0 17.03 17" width="17.03" height="17">
+                                        <use xlink:href="images/sprite.svg#aside-search"></use>
+                                    </svg>
+                                </button>
+                            </label>
+                        </form>
+                        <form class="aside__filter" action="#">
+                            <span class="aside__title title">category</span>
+
+                            <label class="aside__label">
+                                <input class="aside__input sr-only" type="checkbox">
+                                <span class="aside__checkbox">
+                                    <span class="aside__checkbox-type">Chair</span>
+                                    <span>></span>
+                                </span>
+                            </label>
+
+                            <label class="aside__label">
+                                <input class="aside__input sr-only" type="checkbox">
+                                <span class="aside__checkbox">
+                                    <span class="aside__checkbox-type">Table</span>
+                                    <span>></span>
+                                </span>
+                            </label>
+
+                            <label class="aside__label">
+                                <input class="aside__input sr-only" type="checkbox">
+                                <span class="aside__checkbox">
+                                    <span class="aside__checkbox-type">Lamp</span>
+                                    <span>></span>
+                                </span>
+                            </label>
+
+                            <label class="aside__label">
+                                <input class="aside__input sr-only" type="checkbox">
+                                <span class="aside__checkbox">
+                                    <span class="aside__checkbox-type">Watch</span>
+                                    <span>></span>
+                                </span>
+                            </label>
+
+                            <label class="aside__label">
+                                <input class="aside__input sr-only" type="checkbox">
+                                <span class="aside__checkbox">
+                                    <span class="aside__checkbox-type">Clock</span>
+                                    <span>></span>
+                                </span>
+                            </label>
+                        </form>
+
+                        <div class="aside__box">
+                            <span class="aside__title title">recent posts</span>
+                            <article class="aside__additional">
+                                <a class="aside__additional-link" href="#" title="go to news">
+                                    <img class="aside__additional-img" src="../images/blog/blogMini1.jpg" alt="blog image">
+                                </a> 
+                                <div class="aside__additional-box">
+                                    <span class="aside__additional-name">Corem ipsum dolor tetur adipisicing elit</span>
+                                    <time class="aside__date" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                </div>  
+                            </article>
+                            <article class="aside__additional">
+                                <a class="aside__additional-link" href="#" title="go to news">
+                                    <img class="aside__additional-img" src="../images/blog/blogMini2.jpg" alt="blog image">
+                                </a> 
+                                <div class="aside__additional-box">
+                                    <span class="aside__additional-name">Corem ipsum dolor tetur adipisicing elit</span>
+                                    <time class="aside__date" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                </div>  
+                            </article>
+                            <article class="aside__additional">
+                                <a class="aside__additional-link" href="#" title="go to news">
+                                    <img class="aside__additional-img" src="../images/blog/blogMini3.jpg" alt="blog image">
+                                </a> 
+                                <div class="aside__additional-box">
+                                    <span class="aside__additional-name">Corem ipsum dolor tetur adipisicing elit</span>
+                                    <time class="aside__date" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                </div>  
+                            </article>
+                            <article class="aside__additional">
+                                <a class="aside__additional-link" href="#" title="go to news">
+                                    <img class="aside__additional-img" src="../images/blog/blogMini4.jpg" alt="blog image">
+                                </a> 
+                                <div class="aside__additional-box">
+                                    <span class="aside__additional-name">Corem ipsum dolor tetur adipisicing elit</span>
+                                    <time class="aside__date" datetime="2020-01-28">
+                                        <svg viewBox="0 0 15 15" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                        28 JANUARY, 2020
+                                    </time>
+                                </div>  
+                            </article>
+                        </div>
+                        
+                    </aside>
+                </div>
+                <ul class="pagination">
+    <li class="pagination__item pagination__item--active">
+        <a class="pagination__link" href="#">1</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">2</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">3</a>
+    </li>
+    <li class="pagination__item">
+        <a class="pagination__link" href="#">Next</a>
+    </li>
+</ul>
+            </div>
+        </section>
+     
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container container--small">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <a class="logo logo--footer" href="#body" title="go to main page">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <address class="footer__address">
+                    <span class="footer__link footer__link--contacts">
+                        <span>address:</span> 
+                        4772 Wines Lane
+                        Houston, TX 77032
+                    </span>
+                    <a class="footer__link footer__link--contacts" href="tel:+8323475843">
+                        <span class="footer__link footer__link--contacts">Telephone: +832-347-5843</span>
+                    </a>
+                    <a class="footer__link footer__link--contacts" href="mailto:contact@Glee.com">
+                        <span>email</span>: contact@Glee.com
+                    </a>
+                </address>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">services</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Return Policy</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Our Blog</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Terms & Condition</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">account</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Your Account</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Checkout</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Login</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+                
+            <li class="footer__column">
+                <span class="footer__title title">newsletter</span>
+                <span class="footer__text">
+                    <p>
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                </span>
+                <form class="form">
+                    <label class="form__label">
+                        <input class="form__email" type="email" name="email" placeholder="Email address" required>
+                    </label>     
+                    <button class="form__button button" type="submit">Subscribe</button>
+                </form>
+            </li>
+
+            <li class="footer__column">
+                <p class="footer__copyright">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+
+                <nav class="footer__menu menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">About</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <a class="arrow arrow--up" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+    <a class="arrow arrow--down" href="#footer">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

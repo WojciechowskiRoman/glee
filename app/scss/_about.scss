@@ -152,6 +152,7 @@
         }
         
         @media(max-width: $tablet) {
+            max-width: 275px;
             flex: 0 1 33.333%;
             align-items: center;
         }
@@ -168,6 +169,7 @@
 
     &__number {
         font-size: 36px;
+        max-width: 100%;
         position: relative;
 
         &::before {
@@ -205,6 +207,7 @@
     }
 
     &__advantage {
+        max-width: 100%;
         color: #4c4c4c;
     }
 }

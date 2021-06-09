@@ -79,6 +79,23 @@
             display: flex;
             justify-content: space-between;
         }
+
+        &--search {
+            display: flex;
+            justify-content: space-between;
+            height: 43px;
+            border: 1px solid rgba($sky-blue, 0.4);
+            border-radius: 5px;
+            transition: box-shadow 0.3s, color 0.3s;
+
+            &:hover {
+                box-shadow: 0 0 15px $sky-blue;
+            }
+    
+            &:focus {
+                box-shadow: 0 0 15px $grey-blue;
+            }
+        }
     }
 
     &__input {
@@ -128,7 +145,43 @@
         color: #b3b3b3;
     }
 
-    &__product {
+    &__search {
+        padding: 10px;
+        display: inline-block;
+        max-width: 222px;
+        border: transparent;
+        outline: transparent;
+        width: 100%;
+    }
+
+    &__button {
+        background-color: #edf1f4;
+        width: 48px; 
+        fill:#094074;
+        transition: fill 0.3s, background-color 0.3s;
+        
+        &:hover{
+            background-color: $dark-blue;
+            color: $sky-blue;
+            fill: $accent;  
+        }
+    
+        &:focus {
+            color: $accent;
+            fill: $accent; 
+            background-color: $dark-blue;
+            box-shadow: 0 0 25px $dark-blue;
+            outline-color: transparent;
+        }
+    
+        &:active {
+            background-color: $sky-blue;
+            color: $dark-blue;
+            fill: $dark-blue;
+        }
+    }
+
+    &__additional {
         padding-left: 10px;
         margin-bottom: 27px;
         display: flex;
@@ -138,7 +191,7 @@
 
         &:hover {
 
-            .aside__product-img {
+            .aside__additional-img {
                 opacity: 1;
                 animation: flash 2s;
             } 
@@ -162,11 +215,11 @@
         }
     }
 
-    &__product-link {
+    &__additional-link {
        margin-right: 18px;
     }
 
-    &__product-img {
+    &__additional-img {
         padding: 3px 0;
         width: 71px;
         height: 71px;
@@ -174,11 +227,11 @@
         border: solid 2px #f2f2f2;
     }
 
-    &__product-box {
+    &__additional-box {
         max-width: 92px;
     }
 
-    &__product-name {
+    &__additional-name {
         margin-bottom: 11px;
         display: inline-block;
         font-size: 14px;
@@ -186,12 +239,12 @@
         max-width: 100%;
     }
 
-    &__product-star {
+    &__additional-star {
         margin-bottom: 11px;
         padding: 0;
     }
 
-    &__product-cost {
+    &__additional-cost {
         font-size: 15px;
         max-width: 100%;
     }
