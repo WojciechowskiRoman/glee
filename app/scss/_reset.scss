@@ -46,6 +46,12 @@ html {
     word-wrap: break-word;
   }
 
+  p {
+    &:not(:last-child) {
+         margin-bottom: 10px;
+    }
+  }
+
   button {
     cursor: pointer;
     background-color: transparent;

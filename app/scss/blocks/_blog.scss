@@ -17,7 +17,7 @@
     &__inner {
         display: flex;
 
-        @media(max-width: $tablet) {
+        @media(max-width: $medium) {
             flex-direction: column;
             align-items: center;
         }
@@ -28,6 +28,10 @@
         width: 100%;
 
         @media(max-width: $tablet) {
+            margin-right: 18px;
+        }
+
+        @media(max-width: $medium) {
             margin-right: 0;
             order: 1;
         }
@@ -195,10 +199,14 @@
         left: 0;
         z-index: 1;
 
+        @media(max-width: $tablet) {
+            top: 0;
+            margin-left: 0;
+        }
+
         &__filter {
 
-            @media(max-width: $tablet) {
-
+            @media(max-width: $medium) {
                 padding: 0;
 
                 &:nth-child(1) {
@@ -213,6 +221,9 @@
 
         &__search {
             max-width: 100%;
+            &:focus {
+                box-shadow: 0 0 15px #a3bbc8;
+            }
         }
 
         &__additional {
@@ -244,6 +255,10 @@
             }
 
             @media(max-width: $tablet) {
+                padding-left: 10px;
+            }
+
+            @media(max-width: $medium) {
                 display: none;
             }
         }
@@ -279,18 +294,18 @@
             flex-direction: column;
             flex-wrap: wrap;
 
-            @media(max-width: $tablet) {
+            @media(max-width: $medium) {
                 flex-direction: row;
             }
         }
 
         &__title {
-            @media(max-width: $tablet) {
+            @media(max-width: $medium) {
                 display: none;
             }
         }
 
-        @media(max-width: $tablet) {
+        @media(max-width: $medium) {
             margin-left: 0;
             display: flex;
             flex-direction: column;

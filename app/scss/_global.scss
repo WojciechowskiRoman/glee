@@ -127,6 +127,10 @@ address {
             font-size: 18px;
         }
 
+        &:hover {
+            color: $accent;
+        }
+
         &:focus {
             outline-color: $accent;
         }
