@@ -47,6 +47,7 @@ html {
   }
 
   p {
+    word-wrap: break-word;
     &:not(:last-child) {
          margin-bottom: 10px;
     }

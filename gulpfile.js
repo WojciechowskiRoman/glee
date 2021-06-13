@@ -6,7 +6,6 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
-const svgSprite = require('gulp-svg-sprite');
 const fileinclude = require('gulp-file-include');
 
 function browsersync() {
@@ -89,7 +88,6 @@ function build() {
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-    watch(['app/images/**.svg'], svgSprite);
     watch(['app/html/**/*.html'], htmlInclude);
 }
 

@@ -1,0 +1,147 @@
+.comments {
+
+    &__title {
+        margin-bottom: 51px;
+        display: block;
+        font-family: 'Rubik', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $grey-blue;
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        &--reply {
+            padding-top: 30px;
+            margin-bottom: 29px;
+            margin-left: 133px;
+            border: 1px solid #e0e0e0;
+            border-right: none;
+            border-left: none;
+
+            @media(max-width: $medium) {
+                margin-left: 63px;
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            align-items: unset;
+        }
+    }
+
+    &__box {
+        display: flex;
+
+        @media(max-width: $medium) {
+            display: block;
+        }
+    }
+
+    &__img {
+        margin: 0 31px 45px 0;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+
+        @media(max-width: $medium) {
+            margin: 0 15px 11px 0;
+            float: left;
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    &__content {
+        max-width: 699px;
+        font-family: 'Rubik', sans-serif;
+
+        &--reply {
+            max-width: 566px;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        color: $grey-blue;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        @media(max-width: $small-phone) {
+            padding-top: 14px;
+        }
+    }
+
+    &__date {
+        float: right;
+        font-size: 14px;
+        color: #9e9e9e;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 10px;
+            display: block;
+            float: left;
+        }
+    }
+
+    &__text {
+        padding: 17px 0 4px;
+        color: #565872;
+        width: 100%;
+
+        @media(max-width: $tablet) {
+            padding: 26px 0 4px;
+        }
+
+        @media(max-width: $medium) {
+            padding: 67px 0 4px;
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 53px 0 4px;
+        }
+    }
+
+    &__link {
+        margin-bottom: 29px;
+        position: relative;
+        float: left;
+        font-weight: 400;
+        color: #526278;
+        fill: #526278;
+
+        &:hover {
+            fill: $accent;
+        }
+
+        &:active {
+            color: $grey-blue;
+            fill: $grey-blue;
+        }
+
+        &:focus {
+            color: $dark-blue;
+            fill: $dark-blue;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 2px;
+        right: -17px;
+    }
+}

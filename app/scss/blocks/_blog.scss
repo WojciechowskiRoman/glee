@@ -25,14 +25,16 @@
 
     &__list {
         margin-right: 43px;
-        width: 100%;
+        width: 89%;
 
         @media(max-width: $tablet) {
-            margin-right: 18px;
+            margin-right: 13px;
+            width: 63%;
         }
 
         @media(max-width: $medium) {
             margin-right: 0;
+            width: 100%;
             order: 1;
         }
     }
@@ -50,6 +52,7 @@
         }
 
         @media(max-width: $tablet) {
+            margin-bottom: 70px;
             max-width: 100%;
         }
     }
@@ -198,13 +201,27 @@
         margin-left: 27px;
         left: 0;
         z-index: 1;
+        width: 29%;
+        max-width: 100%;
 
-        @media(max-width: $tablet) {
-            top: 0;
+        @media(max-width: $large) {
             margin-left: 0;
         }
 
+        @media(max-width: $tablet) {
+            width: 37%;
+            top: 0;
+        }
+
+        @media(max-width: $medium) {
+            width: 100%;
+        }
+
         &__filter {
+
+            @media(max-width: $tablet) {
+                padding: 0;
+            }
 
             @media(max-width: $medium) {
                 padding: 0;
