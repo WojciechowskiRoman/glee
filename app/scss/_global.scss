@@ -209,20 +209,13 @@ address {
     display: none;
     position: fixed;
     right: 15px;
+    bottom:85px;
     z-index: 9;
     opacity: 0.7;
     transition: opacity 0.5s;
 
     &--up {
-        bottom:85px;
-    }
-
-    &--down {
-        bottom: 40px;
-
-        svg {
-            transform: rotate(180deg);
-        }
+        
     }
 
     &:hover {

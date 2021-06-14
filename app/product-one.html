@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+    <h1 class="sr-only">Glee - e-commerce</h1>
+
+    <header class="header">
+    <div class="container">
+        <nav class="header__menu menu">
+            <a class="logo" href="index.html" title="go to main page">
+                <img class="logo__img" src="images/logo.svg"  alt="logo">
+            </a>
+
+            <ul class="header__menu-list menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Home +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="about.html">About</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="catalog.html">Catalog</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Pages +</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="blog.html">News</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="userbar">
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 15.28 15.281" width="15.28" height="15.281">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                        <span class="sr-only">Site search</span>
+                    </button>
+                </li>
+                
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--like" href="#">
+                        <svg viewBox="0 0 17.87 15.531" width="17.87" height="15.531">
+                            <use xlink:href="images/sprite.svg#like"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>      
+                </li>
+                <li class="userbar__item">
+                    <a class="userbar__link userbar__link--cart" href="#">
+                        <svg viewBox="0 0 18.94 16.969" width="18.94" height="16.969">
+                            <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                        <span class="userbar__count">0</span>
+                    </a>
+                </li>
+                <li class="userbar__item">
+                    <button class="userbar__button button button--round" type="button">
+                        <svg class="userbar__icon" viewBox="0 0 20.03 20.031" width="22" height="22" fill="#fff">
+                            <use xlink:href="images/sprite.svg#dots"></use>
+                        </svg>
+                        <span class="sr-only">Menu</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="header__burger button button--round" type="button">
+                <span></span>
+            </button> 
+        </nav>
+    </div>
+</header>
+
+    <main>
+
+        <div class="top">
+            <h2 class="top__title title">
+                Product Details
+            </h2>
+            <ul class="breadcrubms">
+                <li class="breadcrubms__item">
+                    <a class="breadcrubms__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrubms__item">
+                    <a class="breadcrubms__link" href="#">Product details</a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="product-one">
+            <div class="container container--small">
+                <div class="product-one__inner">
+                    <div class="product-one__sliders product-slider">
+                        <ul class="product-slider__small">
+                            <li class="product-slider__item">
+                                <img class="product-slider__img" src="images/product-one/product1.jpg" alt="">
+                            </li>
+                            <li class="product-slider__item">
+                                <img class="product-slider__img" src="images/product-one/product2.jpg" alt="">
+                            </li>
+                            <li class="product-slider__item">
+                                <img class="product-slider__img" src="images/product-one/product3.jpg" alt="">
+                            </li>
+                        </ul>
+                        <ul class="product-slider__big">
+                            <li>
+                                <img class="product-slider__img product-slider__img--big" src="images/product-one/product4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img class="product-slider__img product-slider__img--big" src="images/product-one/product4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img class="product-slider__img product-slider__img--big" src="images/product-one/product4.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-one__info">
+                        <span class="product-one__title">Pendant lamp</span>
+                        <div class="product-one__star" data-rateyo-rating = "4"></div>
+                        <span class="product-one__cost">23$</span>
+                        <p class="product-one__about">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        </p>
+                        <form class="product-one__form">
+                            <input class="product-one__count" type="number" value="1" min="1"></input>
+                            <button class="product-one__button button" type="submit">add to cart</button>
+                        </form>
+                        <ul class="product-one__tags">
+                            <li class="product-one__category">
+                                <span>SKU:</span>
+                                <span>014</span>
+                            </li>
+                            <li class="product-one__category">
+                                <span>Category:</span>
+                                <span>Lights</span>
+                            </li>
+                            <li class="product-one__category">
+                                <span>Tag:</span>
+                                <a class="product-one__link" href="#">Decorative</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-tabs">
+                    <ul class="product-tabs__top">
+                        <li class="product-tabs__item product-tabs__item--active">
+                            <a class="product-tabs__link product-tabs__link--active" href="#tab-1">Description</a>
+                        </li>
+                        <li class="product-tabs__item">
+                            <a class="product-tabs__link" href="#tab-2">Additional information</a>
+                        </li>
+                        <li class="product-tabs__item">
+                            <a class="product-tabs__link" href="#tab-3">Reviews <span>(2)</span></a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li id="tab-1" class="product-tabs__tab product-tabs__tab--active">
+                            <p class="product-tabs__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </li>
+                        <li class="product-tabs__tab" id="tab-2">1</li>
+                        <li class="product-tabs__tab" id="tab-3">
+                            <div class="comments">
+                                <span class="comments__title">2 Comments</span>
+                                <ul class="comments__list">
+                                    <li class="comments__item">
+                                        <div class="comments__box">
+                                            <img class="comments__img" src="images/blog-one/comment1.jpg"
+                                                alt="commentator's photo">
+                                            <div class="comments__content">
+                                                <span class="comments__name">Delores G. Roberts</span>
+                                                <time class="comments__date" datetime="2020-10-11">
+                                                    Add 11 Oct 2020
+                                                </time>
+                                                <p class="comments__text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Maecenas fringilla massa et tristique convallis. Class aptent taciti
+                                                    sociosqu ad
+                                                    litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+                                                    orci sem, ultrices
+                                                </p>
+                                                <a class="comments__link" href="#">Reply
+                                                    <svg class="comments__icon" viewBox="0 0 14 14" width="14" height="14">
+                                                        <use xlink:href="images/sprite.svg#reply"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+    
+                                        <ul class="comments__list">
+                                            <li class="comments__item comments__item--reply">
+                                                <div class="comments__box">
+                                                    <img class="comments__img" src="images/blog-one/comment2.jpg"
+                                                        alt="commentator's photo">
+                                                    <div class="comments__content">
+                                                        <span class="comments__name">Shannon S. Williams</span>
+                                                        <time class="comments__date" datetime="2020-10-11">
+                                                            Add 11 Oct 2020
+                                                        </time>
+                                                        <p class="comments__text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                            Maecenas fringilla
+                                                            massa et tristique convallis. Class aptent taciti sociosqu ad
+                                                            litora torquent
+                                                            per conubia nostra
+                                                        </p>
+                                                        <a class="comments__link" href="#">Reply
+                                                            <svg class="comments__icon" viewBox="0 0 14 14" width="14"
+                                                                height="14">
+                                                                <use xlink:href="images/sprite.svg#reply"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="related">
+            <div class="container container--small">
+                <h2 class="related__title title">Related products</h2>
+                <div class="related__list">
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/radio1.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="product__box">
+                            <h3 class="product__name">Wooden radio</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span>  
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/chair1.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>    
+                        <div class="product__box">
+                            <h3 class="product__name">Wooden chair</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span>  
+                        </div>                      
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/chair2.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__box">
+                            <h3 class="product__name">White chair</h3>
+                            <span class="product__cost">
+                                $ 29.00
+                            </span>     
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/table1.png" alt="mini-couch">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>  
+                        <div class="product__box">
+                            <h3 class="product__name">Retro table</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span> 
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/radio2.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__box">
+                            <h3 class="product__name">Wooden radio</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span>    
+                        </div>       
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/chair3.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__box">            
+                            <h3 class="product__name">Wooden chair</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span> 
+                        </div> 
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/chair4.png" alt="chair">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="product__box">
+                            <h3 class="product__name">White chair</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span>  
+                        </div>  
+                    </article>
+                    <article class="product">
+                        <div class="product__top">
+                            <img class="product__img" src="images/week-products/table2.png" alt="couch">
+                            <ul class="product__menu">
+                                <li class="product__menu-item">
+                                    <a class="product__action" href="#" title="go to product card">
+                                        <svg class="product__menu-icon" viewBox="0 0 20 20" width="20" height="20">
+                                            <use xlink:href="images/sprite.svg#card"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to cart</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 20" width="22" height="20">
+                                            <use xlink:href="images/sprite.svg#to-cart"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="product__menu-item">
+                                    <button class="product__action button button--round" type="button">
+                                        <span class="sr-only">add to favorite</span>
+                                        <svg class="product__menu-icon" viewBox="0 0 22 18" width="22" height="18">
+                                            <use xlink:href="images/sprite.svg#to-favorite"></use>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product__box">    
+                            <h3 class="product__name">Retro table</h3>
+                            <span class="product__cost">
+                                    $ 29.00
+                            </span>
+                        </div>    
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+    <div class="container container--small">
+        <h2 class="articles__title title">Our Insights & Articles</h2>
+        <a class="articles__link-more" href="#">View All</a>
+        <div class="articles__list wow" data-wow-offset="20">
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog1.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>  
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Diusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog2.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Aonsectetur adipisicing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+            <article class="blog-item">
+                <div class="blog-item__top">
+                    <img class="blog-item__img" src="images/blog/blog3.png" alt="blog image">
+                    <a class="blog-item__type" href="#">news</a>
+                </div>
+                <div class="blog-item__summary">
+                    <a class="blog-item__link" href="#">
+                        <h3 class="blog-item__subtitle">
+                            Rncididunt ut labore et dolore magna aliqua. Ut enim
+                        </h3>
+                    </a>
+                    <span class="blog-item__info">
+                        <time class="blog-item__date blog-item__posted" datetime="2020-01-28">28 JANUARY, 2020</time>
+                        <a class="blog-item__author blog-item__posted" href="#">
+                            by admin
+                        </a>
+                    </span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+        <div class="partners">
+    <div class="container container--small">
+        <ul class="partners__list">
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/peterson.png" alt="partner peterson">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/kmn.png" alt="partner kmn consulting">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/chainforce.png" alt="partner chainforce">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/nextg3n.png" alt="partner next3gn">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/vintage.png" alt="partner vintage">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/peterson.png" alt="partner peterson">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/kmn.png" alt="partner kmn consulting">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/chainforce.png" alt="partner chainforce">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/nextg3n.png" alt="partner next3gn">
+            </li>
+            <li class="partners__item">
+                <img class="partners__img" src="images/partners/vintage.png" alt="partner vintage">
+            </li>
+        </ul>
+    </div>
+</div>
+     
+    </main>
+
+    <footer class="footer" id="footer">
+    <div class="container container--small">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <a class="logo logo--footer" href="#body" title="go to main page">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                </a>
+                <address class="footer__address">
+                    <span class="footer__link footer__link--contacts">
+                        <span>address:</span> 
+                        4772 Wines Lane
+                        Houston, TX 77032
+                    </span>
+                    <a class="footer__link footer__link--contacts" href="tel:+8323475843">
+                        <span class="footer__link footer__link--contacts">Telephone: +832-347-5843</span>
+                    </a>
+                    <a class="footer__link footer__link--contacts" href="mailto:contact@Glee.com">
+                        <span>email</span>: contact@Glee.com
+                    </a>
+                </address>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">services</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Return Policy</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Our Blog</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Terms & Condition</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="footer__column">
+                <span class="footer__title title">account</span>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Your Account</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Checkout</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="login.html">Login</a>
+                    </li>
+
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Register</a>
+                    </li>
+                </ul>
+            </li>
+                
+            <li class="footer__column">
+                <span class="footer__title title">newsletter</span>
+                <span class="footer__text">
+                    <p>
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                </span>
+                <form class="form">
+                    <label class="form__label">
+                        <input class="form__input" type="email" name="email" placeholder="Email address" required>
+                    </label>     
+                    <button class="form__button button" type="submit">Subscribe</button>
+                </form>
+            </li>
+
+            <li class="footer__column">
+                <p class="footer__copyright">
+                    ©2020 CopyRight Example. All rights reserved.
+                </p>
+
+                <nav class="footer__menu menu">
+                    <ul class="footer__menu-list menu__list">
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="index.html">Home</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">About</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Blog</a>
+                        </li>
+                        <li class="footer__menu-item menu__item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <a class="arrow arrow--up" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
