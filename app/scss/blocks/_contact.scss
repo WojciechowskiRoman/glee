@@ -1,0 +1,207 @@
+.contact {
+
+    padding: 120px 0 78px;
+
+    @media(max-width: $medium) {
+        padding: 100px 0 60px
+    }
+
+    @media(max-width: $small-phone) {
+        padding: 80px 0 50px
+    }
+
+    &__title {
+        margin-bottom: 66px;
+        font-size: 35px;
+        color: $grey-blue;
+        animation: fadeIn 1.5s;
+    }
+
+    &__title-up {
+        margin-bottom: 7px;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        color: $sky-blue;
+    }
+
+    &__list {
+        margin-bottom: 81px;
+        display: flex;
+        justify-content: space-around;
+        animation: fadeInDown 0.8s;
+
+        @media(max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media(max-width: $small-phone) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__item {
+        padding: 71px 10px 81px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 370px;
+        width: 100%;
+        border: 2px solid transparent;
+        background-color: #fbfbfb;
+        transition: border 0.3s;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        @media(max-width: $tablet) {
+            background-color: #f1f1f1;
+            &:last-child {
+                margin-right: 30px;
+            }
+        }
+
+        @media(max-width: $medium) {
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @media(max-width: $small-phone) {
+            padding: 43px 10px 60px;
+        }
+
+        &:hover {
+            border: 2px solid $sky-blue;
+
+            .contact__button {
+                background-color: $sky-blue;
+            }
+
+            .contact__icon {
+                fill: #fff;
+            }
+        }
+    }
+
+    &__button {
+        margin-bottom: 60px;
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 6px 57px 0 rgba(37,37,37,0.05);
+        cursor: default;
+        transition: background-color 0.3s;
+    }
+
+    &__icon {
+        fill: $sky-blue;
+        transition: fill 0.3s;
+    }
+
+    &__name {
+        margin-bottom: 15px;
+        max-width: 105px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #222;
+        @extend %limit;
+    }
+
+    address {
+        max-width: 160px;
+        text-align: center;
+        @extend %limit;
+        -webkit-line-clamp: 2;
+    }
+
+    &__info {
+        max-width: 260px;
+        font-family: 'Rubik', sans-serif;
+        text-align: center;
+        line-height: 1.8;
+        font-size: 16px;
+        font-weight: 400;
+        color: #565872;
+        @extend %limit;
+        -webkit-line-clamp: 2;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:active {
+            color: $grey-blue;
+        }
+
+        &:focus {
+            color: $dark-blue;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        animation: fadeInLeft 0.8s;
+
+        @media(max-width: $tablet) {
+            display: block;
+        }
+    }
+}
+.form-comments {
+
+    margin-right: 50px;
+    width: 100%;
+
+    &__label {
+
+        @media(max-width: $tablet) {
+            max-width: 100%;
+        }
+    }
+
+    &__input {
+        &::placeholder {
+            text-transform: uppercase;
+        }
+    }
+
+    &__text {
+        margin-bottom: 24px;
+        min-height: 183px;
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
+
+        @media(max-width: $small-phone) {
+            min-height: 160px;
+        }
+    }
+
+    &__button {
+        @media(max-width: $tablet) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+#map {
+    max-width: 500px;
+    width: 100%;
+    height: 335px;
+
+    @media(max-width: $tablet) {
+        max-width: 100%;
+    }
+}

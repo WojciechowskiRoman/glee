@@ -210,4 +210,4 @@ $(function() {
 
   var mixer = mixitup(cardsContainerFisrt, config);
   mixer = mixitup(cardsContainerSecond, config);
-});
+})

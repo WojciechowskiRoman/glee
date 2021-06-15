@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#fff">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+
+    <h1 class="sr-only">Glee - e-commerce</h1>
+
+    @@include('../lego/header.html')
+
+    <main>
+
+        <div class="top">
+            <h2 class="top__title title">
+                Contact
+            </h2>
+            <ul class="breadcrubms">
+                <li class="breadcrubms__item">
+                    <a class="breadcrubms__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrubms__item">
+                    <a class="breadcrubms__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="contact">
+            <div class="container container--small">
+                <h2 class="contact__title title wow" data-wow-offset="10">
+                    <span class="contact__title-up">Write Here</span>
+                    Get In Touch
+                </h2>
+
+                <ul class="contact__list wow" data-wow-offset="10">
+                    <li class="contact__item">
+                        <button class="contact__button" type="button">
+                            <svg class="contact__icon" viewBox="0 0 31 44" width="31" height="44">
+                                <use xlink:href="images/sprite.svg#address"></use>
+                            </svg>
+                        </button>
+                        <span class="contact__name">Address</span>
+                        <address class="contact__address contact__info">
+                            2416 Mapleview Drive
+                            Tampa, FL 33634
+                        </address>
+                    </li>
+                    <li class="contact__item">
+                        <button class="contact__button" type="button">
+                            <svg class="contact__icon" viewBox="0 0 37 33.968" width="37" height="33.968">
+                                <use xlink:href="images/sprite.svg#email"></use>
+                            </svg>
+                        </button>
+                        <span class="contact__name">Our Email</span>
+                        <a class="contact__info" href="mailto:contact@website.com">
+                            Main Email : contact@website.com
+                        </a>
+                        <a class="contact__info" href="mailto:Info@mail.com">
+                            Inquiries : Info@mail.com
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        <button class="contact__button" type="button">
+                            <svg class="contact__icon" viewBox="0 0 37 44" width="37" height="44">
+                                <use xlink:href="images/sprite.svg#phone"></use>
+                            </svg>
+                        </button>
+                        <span class="contact__name">Our Phone</span>
+                        <a class="contact__info" href="tel:0029129102320">
+                            Office Telephone : 0029129102320
+                        </a>
+                        <a class="contact__info" href="tel:000232439493">
+                            Mobile : 000 2324 39493
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="contact__form wow" data-wow-offset="120">
+                    <form class="form-comments">
+                        <div class="form-comments__top">
+                            <label class="form-comments__label">
+                                <input class="form-comments__input" type="text" placeholder="name" required>
+                            </label>
+                            <label class="form-comments__label">
+                                <input class="form-comments__input" type="email" placeholder="email"
+                                    required>
+                            </label>
+                        </div>
+    
+                        <label class="form-comments__textarea">
+                            <textarea class="form-comments__text" placeholder="message"></textarea>
+                        </label>
+                        <button class="form-comments__button button" type="submit">send message</button>
+                    </form>
+
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+
+    @@include('../lego/articles.html')
+    @@include('../lego/partners.html')
+    @@include('../lego/footer.html')
+
+    <a class="arrow arrow--up" href="#body">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+            <use xlink:href="images/sprite.svg#up"></use>
+        </svg>
+    </a>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            const uluru = { lat: 29.766976243817133, lng: -95.27841493747707 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 11,
+                center: uluru,
+            });
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
